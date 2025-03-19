@@ -43,16 +43,16 @@
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- *Implementing Loops: The player can correctly apply for and while loops to collect and ship ingredients*
+- *Controlling Loop Execution: The player can change loop behavior based on game objectives (e.g., stop when a condition is met)*
+- *Loop Condition Evaluation: The player can determine when a loop should stop running depending on the state of the conveyor or ingredients.*
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- *Prior to the game, players need to be able understanding basic programming concepts*
+- *Prior to the game, players need to be able understanding factory or warehouse workflow*
 
 ## Assessment Measures
 
