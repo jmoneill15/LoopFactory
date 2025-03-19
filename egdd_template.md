@@ -2,28 +2,25 @@
 
 ## Elevator Pitch
 
-*A one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator. You have less than 60 Seconds. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.*
+*Loop Factory is a fast paced game for elementary students, players can grab, assemble, and ship out orders all while learning the fundamentals of for and while loops through a fun hands-on gameplay!*
 
 ## Influences (Brief)
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- *OverCooked*:
+  - Medium: *Game*
+  - Explanation: *The game works to take in ingredients to build a larger item like a meal, and in a similar matter out while loop belt will take in components to produce a final item.*
+- *How its Made*:
+  - Medium: *Television*
+  - Explanation: *The show involves them going to the different production factories, within the scenes you can see the conveyor belts move the products as they go through each step.*
+- *HellDivers 2*:
+  - Medium: *Games*
+  - Explanation: *In the game there is a mechanic where you have to input a certain order of keys to be able to use stratagems.*
 
 ## Core Gameplay Mechanics (Brief)
-
-*Give a very high-level description of any core gameplay mechanics*
-
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- *Pick up and carry the item over to the conveyor belts*
+- *Shipment address must be correctly imputed to complete round*
+- *If the wrong item is placed, health will be lost*
+- *After you complete the round, an end of round screen appears*
 
 # Learning Aspects
 
@@ -33,11 +30,14 @@
 
 ## Target Audiences
 
-*Who are your learners?*
+- *Anyone new to loops that haven’t yet learned to identify how each of the loops work.*
+- *Anyone that might want a game to help them refresh their memory on them.*
+- *Novice programmers with a little prior programming knowledge.*
+- *Should be appropriate for younger kids and adults who are young at heart.*
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+*This game can be used during classes, or in computer labs, especially in entry level coding courses where users are new to loops.*
 
 ## Learning Objectives
 
