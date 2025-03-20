@@ -26,7 +26,7 @@
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+*Any and all of the disciplines and learning domains for this subject.*
 
 ## Target Audiences
 
@@ -58,80 +58,101 @@
 
 *Describe how the learning will be assessed, e.g., pre/post multiple-choice test, or SAT, or some other instrument.*
 
-*If proposing a new instrument, briefly and concisely list some example assessment questions.*
+- *Given a loop condition, be able to identify which loop type matches.*
+- *Given a loop type, be able to write a possible objective that displays the loop.*
 
 # What sets this project apart?
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
-- *Reason #4*
-- *etc.*
+- *Real-World Application of Loops in Automation*
+- *Bridging CS Education and Industry Needs*
+- *Gamified Problem-Solving with Immediate Feedback*
+- *Unique Factory Simulation Theme*
 
 # Player Interaction Patterns and Modes
 
 ## Player Interaction Pattern
 
-*Describe how people play your game, how many players are involved at once, how they interact with the system works, etc.*
+*How people play your game, how many players are involved at once, how they interact with the system works, etc.*
+
+- *This game is played as a solo game. Players utilize WSAD to move their character around the map, then when they want to pick up an item they will press E. And when they finally finish their objective they need to use the four arrow keys in a given pattern that they have to correctly type out.*
 
 ## Player Modes
 
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
-
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+- *Single Player: You continuously work to win rounds until the player loses the game.*
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *Primary Objective #2*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
+- *Managing Pre-Made Loops (Conveyor Belts) to Automate Production*:
+    - Description: *Players will interact with pre-existing conveyor belts (loops) to ensure materials move correctly through different production stages. They must adjust parameters, such as speed, starting/stopping conditions, and branching paths, to maintain efficiency*
+    - Alignment: *This aligns with "Implementing Loops" by helping players recognize how loops function in an automated system, even if they are not coding them directly. Players will interact with and modify loop behavior in a factory simulation.*
+- *Controlling Loop Execution to Avoid Bottlenecks*:
+    - Description: *Players must adjust when and how conveyor belts (loops) activate, using mechanisms like sensors, gates, and timers to avoid jams, wasted resources, or slow production times.*
+    - Alignment: *This aligns with "Controlling Loop Execution" by requiring players to strategically manage when loops run or pause, similar to using break and continue statements in programming.*
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+*Users can pick up and place items, and walk around throughout the open floor areas.*
 
 # Rules
 
 *What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
 
+- *If a player puts an incorrect item on the While Loop belt they lose a portion of health*
+- *If a player puts a correct item on the While Loop belt it is accepted*
+- *When all the necessary items have been added to produce one of the main items it will be spit out from the other side of the While Loop belt.*
+- *Players can only put fully built items on the For Loop belt*
+- *Players will have an index for all of the possible items that can spawn on the belt with their names for identification*
+- *Players can only pick up one item at a time*
+- *Limited time to complete the task*
+
+
 # Objects/Entities
 
 *What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
 
+- *Character Sprite*
+- *A variety of items parts that can build various vehicles*
+- *Fully built vehicle items*
+- *3 Working conveyor belts (While, For, and Item Spawner)*
+- *Address shipment screen*
+- *Factory background Scene*
+
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
+- *Conveyor Belt  Mechanics*: *The conveyor belt system is the backbone of Loop Factory, serving as the primary method for transporting items through the automation process. Players will place items onto the conveyor belts, which move them toward processing stations or shipment areas. The belts operate continuously, simulating real-world production lines, and players must strategically design their layouts to optimize efficiency. Items placed on the wrong belts or sent in the incorrect order may cause workflow disruptions, forcing players to debug their automation setup.
+The conveyor belts interact with other game elements, such as sorting machines, item processors, and shipment stations, making their placement crucial to a successful automation loop. Players must understand how for and while loops work to automate item movement effectively. For example, a for loop might be used to ensure a set number of items reach a processing station before moving to the next step, while a while loop could control continuous item flow based on specific conditions, such as waiting for a shipment order to be completed.*
+- *Item Processing and Delivery*: *In Loop Factory, item shipping and delivery rely on structured loop logic to ensure that products are processed and sent correctly. The for loop is responsible for handling the delivery process, ensuring that shipments only go out when a specified condition is met. For example, a delivery truck will not dispatch until it has collected the required number of packages—such as waiting for three completed orders before proceeding. This enforces batch processing, teaching players how iteration works in real-world automation and logistics.
+The while loop, on the other hand, controls item production and assembly by monitoring raw materials on the conveyor belt. Before a product can be completed, the loop waits until all necessary components have arrived at the assembly station. For instance, if the goal is to produce a car, the while loop ensures that the belt has received four tires, four doors, and one engine before triggering assembly. This mechanic reinforces the concept of waiting for conditions to be satisfied before executing an action, mirroring how while loops function in programming.*
+- *Automations*: *While automation is key, players will also have direct control over item pickup and placement. Players can manually grab an item and carry it to a designated location, such as a processing belt, or shipment belt. This mechanic introduces an interactive element that allows for strategic decision-making, as players can intervene when errors occur or optimize their system on the fly.
+This mechanic also plays a role in reinforcing the need for correct shipment addresses. Players must ensure that items are sent to the proper destination, and any mistakes—such as placing the wrong item in a shipment—result in health loss or penalties. Once all items have been correctly sorted and delivered, the round concludes with an end-of-round summary, providing feedback on efficiency, errors, and potential improvements.*
 
     
 ## Feedback
 
 *Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
 
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+- *Items going into while loop will show if they are correct based on what color the tunnel flushes (green correct, red incorrect) and will give SFX sounds like a ding or err noise.*
+  - *Players will also see an increase in the number of item parts they have collected based on a screen above the while loop belt.*
+- *When they correctly ship all items they will all change into packaged shipping boxes and go out the belt, calling the end of round screen.*
+- *There will be an index button that will pull up a screen pausing the game, so that they can take their time looking at all of the item images and know the names for each of them.*
 
 # Story and Gameplay
 
 ## Presentation of Rules
 
-*Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+*The game introduces mechanics through an interactive tutorial level, ensuring players learn by doing. Players start with a simple conveyor belt, tapping to activate it and observing how loops automate movement. Next, they encounter obstacles and speed controls, learning to adjust conveyor efficiency. They then interact with sensor-based conveyors, understanding how loops execute based on conditions. A sorting challenge follows, teaching players to control splitters and direct products efficiently. Finally, they enter a free play section, experimenting with settings to complete a small order. This hands-on, step-by-step approach ensures gradual learning, immediate feedback, and engagement without overwhelming players.*
 
 ## Presentation of Content
 
-*Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+*The title screen will have a button to go to a tutorial where they will go through a super simplistic run through of a round. Players will get to see how they can move, how they can pick up and put down items, and how they can produce a vehicle so they can learn the core mechanics of the game before they start. The tutorial will pause with small instructions like “Your player moves with WASD, walk around to the highlighted area”.*
 
 ## Story (Brief)
 
 *The Summary or TL;DR version of below*
+
+*You’re a junior robot engineer working in the LOOP FACTORY where everything is built with code! Today is your first day, and your job is to manage shipments using loops. With only loops to help you, can you keep up with the chaos and make it to the top?*
 
 ## Storyboarding
 
