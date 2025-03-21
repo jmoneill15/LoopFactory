@@ -167,17 +167,25 @@ This game takes place in a factory setting, it is entirely designed in pixel 2D 
 ## Graphical
 
 - Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
+  - *Robot character that user plays as*
 - Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+  - *Machine/Conveyor belt:*
+    - *Polished chrome for robotic arms*
+    - *Rusted iron for outdated units*
+  - *Item texture:*
+    - *Crate surfaces (wood, metal, plastic)*
+	  - *Barcode stickers or shipment labels*
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+  - *Metallic Floor Panels*
+  - *Moving tread texture with industrial rubber grip*
+  - *Large riveted metal sheets*
+  - *Retro-futuristic texture: blinking lights and buttons*
+  - *Shipment area:*
+    - *Clean, white-tiled or metal area*
+    - *Glowing “3/3 Packages Received” indicators*
+  - *Debug Zone*
+	  - *Glitched tile texture (pixelated or fragmented)*
+	  - *Error symbols embedded in the surface (e.g., ⚠️ or ! loops)*
 
 
 ## Audio
@@ -186,14 +194,14 @@ This game takes place in a factory setting, it is entirely designed in pixel 2D 
 *Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
+  - *Game Play w/ High health:* *Calm fun music, randomized whirring machine noises in background*
+  - *Game Play w/ Low Health:*: *Faster Background music, it’s louder*
   
 *Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
 - Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
+  - *Wrong Item on While Loop Belt:* *Buzzer Noise, Belt Breaking noise*
+  - *Shipping out items:* *Tape Ripping, Whooshing noise (like wind)*
 
 
 # Metadata
