@@ -162,7 +162,7 @@ In Loop Factory, players take on the role of a junior robot engineer starting th
 
 ## Aethestics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+This game takes place in a factory setting, it is entirely designed in pixel 2D art. It has music and SFX to create a factory environment with machine noises, moving belts, just to show it is a functioning factory. Each round will start out relaxing and calm, the game will continue as such unless the player is close to losing then the ambiance will change to a more nervous and rushed vibe. It will put pressure on the player to show the stress and how careful they have to be as they continue to be able to play on.
 
 ## Graphical
 
