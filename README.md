@@ -17,7 +17,7 @@ Loop Factory is a fast-paced 2D educational game that teaches players how to use
 (Coming Soon)
 
 ## Education Game Design Document
-[Link to the document in the repo](https://github.com/jmoneill15/LoopFactory/blob/main/docs/egdd.md)
+[Link to EGDD](https://github.com/jmoneill15/LoopFactory/blob/main/docs/egdd.md)
 
 ## Credits and Acknowledgements
 List any resources with links to sources, author attribution, and brief acknowledgment of how the resource was used (including Gen AI for writing, etc.)
