@@ -1,28 +1,23 @@
 # LoopFactory
-A repository holding all the student-facing shared information for the course.
+## Description of Game
+Loop Factory is a fast-paced 2D educational game that teaches players how to use for and while loops through interactive gameplay. Players take on the role of a junior robot engineer working in an automated factory where they collect, assemble, and ship items using loop logic. By managing conveyor belts and solving loop-based challenges, players gain hands-on experience with core programming concepts. Designed for beginners, classrooms, and anyone looking to refresh their coding skills, Loop Factory makes learning to code fun, visual, and engaging.
 
-Students can add content to this via Pull Requests.
-
-This will eventually hold:
-- The final project showcase (which will then be published as a public GitHub page)
-- The list of allowed educational games for the Reflection assignments
-
-
-
-Description of Game
 ## Developers
-Name (email)
-Name (email)
-Name (email)
+- Heni Patel (heni@udel.edu)
+- John Prince Lee Clark (princec@udel.edu)
+- Julia O'Neill (jmoneill@udel.edu)
 
 ## Basic Instructions
 (Coming Soon)
 
-Screenshot
+## Screenshot
 (Coming Soon)
-Gameplay Video
+
+## Gameplay Video
 (Coming Soon)
-Education Game Design Document
+
+## Education Game Design Document
 Link to the document in your repo
-Credits and Acknowledgements
+
+## Credits and Acknowledgements
 List any resources with links to sources, author attribution, and brief acknowledgment of how the resource was used (including Gen AI for writing, etc.)
