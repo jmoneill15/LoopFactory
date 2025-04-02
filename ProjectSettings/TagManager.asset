@@ -53,5 +53,8 @@ TagManager:
   - name: Decor
     uniqueID: 2533469635
     locked: 0
+  - name: Outline
+    uniqueID: 316675721
+    locked: 0
   m_RenderingLayers:
   - Default
