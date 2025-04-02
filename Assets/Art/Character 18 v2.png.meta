@@ -172,12 +172,12 @@ TextureImporter:
       name: Character 18 v2_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 95
-        width: 18
+        x: 4
+        y: 94
+        width: 16
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: Character 18 v2_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 28
         y: 95
-        width: 18
+        width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: Character 18 v2_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 95
-        width: 18
-        height: 20
+        x: 52
+        y: 96
+        width: 16
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: Character 18 v2_3
       rect:
         serializedVersion: 2
-        x: 75
-        y: 95
-        width: 18
-        height: 20
+        x: 76
+        y: 96
+        width: 16
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: Character 18 v2_4
       rect:
         serializedVersion: 2
-        x: 99
-        y: 95
-        width: 18
+        x: 100
+        y: 94
+        width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: Character 18 v2_5
       rect:
         serializedVersion: 2
-        x: 123
-        y: 95
-        width: 18
+        x: 124
+        y: 94
+        width: 16
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: Character 18 v2_6
       rect:
         serializedVersion: 2
-        x: 147
-        y: 95
-        width: 18
-        height: 21
+        x: 148
+        y: 93
+        width: 16
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: Character 18 v2_7
       rect:
         serializedVersion: 2
-        x: 171
-        y: 95
-        width: 18
+        x: 172
+        y: 94
+        width: 16
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: Character 18 v2_8
       rect:
         serializedVersion: 2
-        x: 3
-        y: 71
-        width: 18
-        height: 21
+        x: 4
+        y: 72
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: Character 18 v2_9
       rect:
         serializedVersion: 2
-        x: 27
-        y: 72
-        width: 18
+        x: 28
+        y: 71
+        width: 16
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: Character 18 v2_10
       rect:
         serializedVersion: 2
-        x: 51
-        y: 71
-        width: 18
-        height: 21
+        x: 52
+        y: 69
+        width: 16
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: Character 18 v2_11
       rect:
         serializedVersion: 2
-        x: 75
-        y: 72
-        width: 18
-        height: 21
+        x: 76
+        y: 69
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: Character 18 v2_12
       rect:
         serializedVersion: 2
-        x: 1
-        y: 48
-        width: 21
-        height: 18
+        x: 2
+        y: 49
+        width: 19
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: Character 18 v2_13
       rect:
         serializedVersion: 2
-        x: 25
-        y: 49
-        width: 21
-        height: 18
+        x: 26
+        y: 50
+        width: 19
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: Character 18 v2_14
       rect:
         serializedVersion: 2
-        x: 49
-        y: 49
-        width: 21
-        height: 18
+        x: 50
+        y: 50
+        width: 19
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: Character 18 v2_15
       rect:
         serializedVersion: 2
-        x: 73
-        y: 48
-        width: 21
-        height: 18
+        x: 74
+        y: 49
+        width: 19
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: Character 18 v2_16
       rect:
         serializedVersion: 2
-        x: 97
-        y: 47
-        width: 21
-        height: 18
+        x: 98
+        y: 48
+        width: 19
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,12 +546,12 @@ TextureImporter:
       name: Character 18 v2_17
       rect:
         serializedVersion: 2
-        x: 121
-        y: 47
-        width: 22
-        height: 15
+        x: 122
+        y: 48
+        width: 20
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: Character 18 v2_18
       rect:
         serializedVersion: 2
-        x: 145
-        y: 47
-        width: 22
-        height: 16
+        x: 146
+        y: 48
+        width: 20
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: Character 18 v2_19
       rect:
         serializedVersion: 2
-        x: 169
-        y: 47
-        width: 22
-        height: 15
+        x: 170
+        y: 48
+        width: 20
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: Character 18 v2_20
       rect:
         serializedVersion: 2
-        x: 193
-        y: 47
-        width: 22
-        height: 15
+        x: 194
+        y: 48
+        width: 20
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: Character 18 v2_21
       rect:
         serializedVersion: 2
-        x: 3
-        y: 23
-        width: 18
-        height: 21
+        x: 4
+        y: 24
+        width: 16
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: Character 18 v2_22
       rect:
         serializedVersion: 2
-        x: 3
+        x: 4
         y: 0
-        width: 18
-        height: 18
+        width: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: Character 18 v2_23
       rect:
         serializedVersion: 2
-        x: 27
+        x: 28
         y: 0
-        width: 18
-        height: 18
+        width: 16
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1c7540dec08754a45aa6967edcb85431
     internalID: 0
     vertices: []
     indices: 
