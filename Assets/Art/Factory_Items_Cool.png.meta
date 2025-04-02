@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: ab8bc782cd9b2124a9ffecb8bfe0e76e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3004118694569855601
+    second: Factory_Items_Cool_0
+  - first:
+      213: 4532960787086661983
+    second: Factory_Items_Cool_1
+  - first:
+      213: -4006758101722831811
+    second: Factory_Items_Cool_2
+  - first:
+      213: -3840296790543736741
+    second: Factory_Items_Cool_3
+  - first:
+      213: -6844794478061198057
+    second: Factory_Items_Cool_4
+  - first:
+      213: -6707380550219654140
+    second: Factory_Items_Cool_5
+  - first:
+      213: -5862409679470814273
+    second: Factory_Items_Cool_6
+  - first:
+      213: -4799946953484742515
+    second: Factory_Items_Cool_7
+  - first:
+      213: 7196515882585178403
+    second: Factory_Items_Cool_8
+  - first:
+      213: 8676669763566660414
+    second: Factory_Items_Cool_9
+  - first:
+      213: -2750602392697781672
+    second: Factory_Items_Cool_10
+  - first:
+      213: 5480802334424995539
+    second: Factory_Items_Cool_11
+  - first:
+      213: 119426648825064011
+    second: Factory_Items_Cool_12
+  - first:
+      213: -6143039728085912032
+    second: Factory_Items_Cool_13
+  - first:
+      213: 8081000241024653747
+    second: Factory_Items_Cool_14
+  - first:
+      213: -5787592212194554382
+    second: Factory_Items_Cool_15
+  - first:
+      213: 7562314861008822575
+    second: Factory_Items_Cool_16
+  - first:
+      213: 9098977229626261422
+    second: Factory_Items_Cool_17
+  - first:
+      213: -8071375087305494675
+    second: Factory_Items_Cool_18
+  - first:
+      213: 5387805125793302978
+    second: Factory_Items_Cool_19
+  - first:
+      213: -561229983348226479
+    second: Factory_Items_Cool_20
+  - first:
+      213: -1593334832434508014
+    second: Factory_Items_Cool_21
+  - first:
+      213: -2146534990614304677
+    second: Factory_Items_Cool_22
+  - first:
+      213: 2717783477224716837
+    second: Factory_Items_Cool_23
+  - first:
+      213: 7690753934580936308
+    second: Factory_Items_Cool_24
+  - first:
+      213: 7874217604569981376
+    second: Factory_Items_Cool_25
+  - first:
+      213: -1464907393801108417
+    second: Factory_Items_Cool_26
+  - first:
+      213: -4783044849242601612
+    second: Factory_Items_Cool_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Factory_Items_Cool_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 785
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a42f44906c0b920800000000000000
+      internalID: 3004118694569855601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 782
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f595317b1df48ee30800000000000000
+      internalID: 4532960787086661983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 748
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3464e53cb22568c0800000000000000
+      internalID: -4006758101722831811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 787
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50619f6a6684bac0800000000000000
+      internalID: -3840296790543736741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 729
+        width: 20
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7156b9effa76201a0800000000000000
+      internalID: -6844794478061198057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 721
+        width: 20
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c1bc24de89ae2a0800000000000000
+      internalID: -6707380550219654140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 716
+        width: 20
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb9457f47984aea0800000000000000
+      internalID: -5862409679470814273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 743
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80d2d05da9236db0800000000000000
+      internalID: -4799946953484742515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 753
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32142f101192fd360800000000000000
+      internalID: 7196515882585178403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 751
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b63c2dd29b96870800000000000000
+      internalID: 8676669763566660414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 684
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852c8e872b5e3d9d0800000000000000
+      internalID: -2750602392697781672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 257
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d698834fa8bf0c40800000000000000
+      internalID: 5480802334424995539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 721
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4aeee387e948a100800000000000000
+      internalID: 119426648825064011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 721
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026b35e1ae98fbaa0800000000000000
+      internalID: -6143039728085912032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 720
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9de1c77ea752070800000000000000
+      internalID: 8081000241024653747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 524
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd83570c875eafa0800000000000000
+      internalID: -5787592212194554382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_16
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 620
+        width: 30
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21a61a9c4db2f860800000000000000
+      internalID: 7562314861008822575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 556
+        width: 50
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafbd37f49f064e70800000000000000
+      internalID: 9098977229626261422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 161
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fe7304f17bcff80800000000000000
+      internalID: -8071375087305494675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 428
+        width: 30
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c940f1573455ca40800000000000000
+      internalID: 5387805125793302978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 396
+        width: 30
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1560b3dbd4c1638f0800000000000000
+      internalID: -561229983348226479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 300
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f0c78696653e9e0800000000000000
+      internalID: -1593334832434508014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 460
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58ec728cc9f532e0800000000000000
+      internalID: -2146534990614304677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_23
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 460
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ab7605ca187b520800000000000000
+      internalID: 2717783477224716837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 321
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e62a5c4fb0bba60800000000000000
+      internalID: 7690753934580936308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 364
+        width: 92
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c165842137d64d60800000000000000
+      internalID: 7874217604569981376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 88
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3444ab9c7a9babe0800000000000000
+      internalID: -1464907393801108417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Cool_27
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 136
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47702202d063f9db0800000000000000
+      internalID: -4783044849242601612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

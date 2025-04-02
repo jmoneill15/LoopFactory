@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 4036c0608e39857449b45281476229e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1393881033865363827
+    second: Factory_Items_Warm_0
+  - first:
+      213: 8676725772884772039
+    second: Factory_Items_Warm_1
+  - first:
+      213: 7752172808155845032
+    second: Factory_Items_Warm_2
+  - first:
+      213: 9150143263665182267
+    second: Factory_Items_Warm_3
+  - first:
+      213: 7648770275949291310
+    second: Factory_Items_Warm_4
+  - first:
+      213: 7657782549134056085
+    second: Factory_Items_Warm_5
+  - first:
+      213: -7987491674996824232
+    second: Factory_Items_Warm_6
+  - first:
+      213: -6988122434446687303
+    second: Factory_Items_Warm_7
+  - first:
+      213: -5198300240113282103
+    second: Factory_Items_Warm_8
+  - first:
+      213: 7610409733846917490
+    second: Factory_Items_Warm_9
+  - first:
+      213: -7570215888346933282
+    second: Factory_Items_Warm_10
+  - first:
+      213: -2413788131871805482
+    second: Factory_Items_Warm_11
+  - first:
+      213: -6082795553746858088
+    second: Factory_Items_Warm_12
+  - first:
+      213: 7416099063017677776
+    second: Factory_Items_Warm_13
+  - first:
+      213: -4603758276559908396
+    second: Factory_Items_Warm_14
+  - first:
+      213: -8079249080495209757
+    second: Factory_Items_Warm_15
+  - first:
+      213: -5679951904715401231
+    second: Factory_Items_Warm_16
+  - first:
+      213: 6368195663813035604
+    second: Factory_Items_Warm_17
+  - first:
+      213: -2281281209944483432
+    second: Factory_Items_Warm_18
+  - first:
+      213: 8282226577937095874
+    second: Factory_Items_Warm_19
+  - first:
+      213: -2128918284981195412
+    second: Factory_Items_Warm_20
+  - first:
+      213: -9115993243114067959
+    second: Factory_Items_Warm_21
+  - first:
+      213: 4625155467207738584
+    second: Factory_Items_Warm_22
+  - first:
+      213: 751721579282761694
+    second: Factory_Items_Warm_23
+  - first:
+      213: 6635204255496340946
+    second: Factory_Items_Warm_24
+  - first:
+      213: -512767243260397835
+    second: Factory_Items_Warm_25
+  - first:
+      213: -2894585399099519751
+    second: Factory_Items_Warm_26
+  - first:
+      213: 7194861961479522358
+    second: Factory_Items_Warm_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Factory_Items_Warm_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 785
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8efc45b590f7ace0800000000000000
+      internalID: -1393881033865363827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 782
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c406428e1ce96870800000000000000
+      internalID: 8676725772884772039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 748
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a15293a810459b60800000000000000
+      internalID: 7752172808155845032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 787
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3652ba91d6dbfe70800000000000000
+      internalID: 9150143263665182267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 729
+        width: 20
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2726828a04e52a60800000000000000
+      internalID: 7648770275949291310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 721
+        width: 20
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a1250e7a8e54a60800000000000000
+      internalID: 7657782549134056085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 716
+        width: 20
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857ac6124aab62190800000000000000
+      internalID: -7987491674996824232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 743
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b30ed7aba3350f90800000000000000
+      internalID: -6988122434446687303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 753
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c35830397debd7b0800000000000000
+      internalID: -5198300240113282103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 751
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271ee1dc45b9d9960800000000000000
+      internalID: 7610409733846917490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 684
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7101e12c031f690800000000000000
+      internalID: -7570215888346933282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 257
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df2abc9b70808ed0800000000000000
+      internalID: -2413788131871805482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 721
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fc7910ca1959ba0800000000000000
+      internalID: -6082795553746858088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 721
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3a64e3ec64be660800000000000000
+      internalID: 7416099063017677776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 720
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1d1ed3d3a2c10c0800000000000000
+      internalID: -4603758276559908396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 524
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e28e2954cdb0ef80800000000000000
+      internalID: -8079249080495209757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_16
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 620
+        width: 30
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7922a16d1cc21b0800000000000000
+      internalID: -5679951904715401231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 556
+        width: 50
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45642c15730606850800000000000000
+      internalID: 6368195663813035604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 161
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8995c7883d24750e0800000000000000
+      internalID: -2281281209944483432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 428
+        width: 30
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc5d37013160f270800000000000000
+      internalID: 8282226577937095874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 396
+        width: 30
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6dacdb69109472e0800000000000000
+      internalID: -2128918284981195412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 396
+        width: 66
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9082359a17c7d7180800000000000000
+      internalID: -9115993243114067959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 300
+        width: 34
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d48fdd646adf2040800000000000000
+      internalID: 4625155467207738584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_23
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 460
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed705272bc6ae6a00800000000000000
+      internalID: 751721579282761694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 321
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d505059d1bf41c50800000000000000
+      internalID: 6635204255496340946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 364
+        width: 92
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6f105b8e842e8f0800000000000000
+      internalID: -512767243260397835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 88
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc04aa6aed54d7d0800000000000000
+      internalID: -2894585399099519751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_Items_Warm_27
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 136
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63805fd75d849d360800000000000000
+      internalID: 7194861961479522358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
