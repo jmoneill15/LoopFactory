@@ -23,3 +23,7 @@ Loop Factory is a fast-paced 2D educational game that teaches players how to use
 List any resources with links to sources, author attribution, and brief acknowledgment of how the resource was used (including Gen AI for writing, etc.)
 - Game Design Template by Austin Cory Bart, Mark Sheriff, Alec Markarian, and Benjamin Stanley.
 - Sound effects generated using UnityAssest
+
+Assests Used:
+- Sterile Factory Tileset By Meghan https://goldentreesart.itch.io/sterile-factory-tileset-32x32
+- Pixel Plains By SnowHex https://snowhex.itch.io/pixel-plains
