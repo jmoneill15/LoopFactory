@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_Cool_Caution_X_Floor_0: 4181562520723916108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

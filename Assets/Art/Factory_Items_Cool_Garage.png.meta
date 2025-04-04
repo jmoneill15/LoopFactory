@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_Cool_Garage_0: -7614450820235915097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

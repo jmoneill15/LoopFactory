@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_CoolLeftCross_0: 3031456245389356624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

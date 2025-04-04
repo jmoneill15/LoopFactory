@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_CoolEdgeOutline_0: 4480957618837997984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

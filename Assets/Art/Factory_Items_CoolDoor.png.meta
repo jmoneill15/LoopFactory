@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_CoolDoor_0: 8508198991281563812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

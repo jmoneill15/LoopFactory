@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_Cool_DarkGreySquare_0: 1751600274182463154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

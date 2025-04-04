@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_Cool_Wall_MultiThing_0: 8405799771449437043
+      Factory_Items_Cool_Wall_MultiThing_1: 3964891469550245832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

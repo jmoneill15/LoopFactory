@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_Warm_0: -3973860471382567901
+      Factory_Ground_Tiles_Warm_1: 1009094972971991997
+      Factory_Ground_Tiles_Warm_2: 673567182136778407
+      Factory_Ground_Tiles_Warm_3: 437234685023130832
+      Factory_Ground_Tiles_Warm_4: 586844587794046326
+      Factory_Ground_Tiles_Warm_5: -1541985746655157036
+      Factory_Ground_Tiles_Warm_6: -621293799756689512
+      Factory_Ground_Tiles_Warm_7: -6649961489881269140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

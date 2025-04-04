@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_Cool_Orange_container_0: -1958195036814385487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

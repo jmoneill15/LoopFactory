@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Ground_Tiles_CoolSquareWall_0: -7825989840445311406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

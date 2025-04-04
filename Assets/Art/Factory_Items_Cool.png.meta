@@ -809,7 +809,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_Cool_0: 3004118694569855601
+      Factory_Items_Cool_1: 4532960787086661983
+      Factory_Items_Cool_10: -2750602392697781672
+      Factory_Items_Cool_11: 5480802334424995539
+      Factory_Items_Cool_12: 119426648825064011
+      Factory_Items_Cool_13: -6143039728085912032
+      Factory_Items_Cool_14: 8081000241024653747
+      Factory_Items_Cool_15: -5787592212194554382
+      Factory_Items_Cool_16: 7562314861008822575
+      Factory_Items_Cool_17: 9098977229626261422
+      Factory_Items_Cool_18: -8071375087305494675
+      Factory_Items_Cool_19: 5387805125793302978
+      Factory_Items_Cool_2: -4006758101722831811
+      Factory_Items_Cool_20: -561229983348226479
+      Factory_Items_Cool_21: -1593334832434508014
+      Factory_Items_Cool_22: -2146534990614304677
+      Factory_Items_Cool_23: 2717783477224716837
+      Factory_Items_Cool_24: 7690753934580936308
+      Factory_Items_Cool_25: 7874217604569981376
+      Factory_Items_Cool_26: -1464907393801108417
+      Factory_Items_Cool_27: -4783044849242601612
+      Factory_Items_Cool_3: -3840296790543736741
+      Factory_Items_Cool_4: -6844794478061198057
+      Factory_Items_Cool_5: -6707380550219654140
+      Factory_Items_Cool_6: -5862409679470814273
+      Factory_Items_Cool_7: -4799946953484742515
+      Factory_Items_Cool_8: 7196515882585178403
+      Factory_Items_Cool_9: 8676669763566660414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

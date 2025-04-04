@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Factory_Items_Cool_MiddleBeltPart_0: -895654753732806057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
