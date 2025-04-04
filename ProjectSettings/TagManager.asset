@@ -56,5 +56,8 @@ TagManager:
   - name: Outline
     uniqueID: 316675721
     locked: 0
+  - name: Characters
+    uniqueID: 3431886175
+    locked: 0
   m_RenderingLayers:
   - Default
