@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      car chasis_0: -8752416068897008786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

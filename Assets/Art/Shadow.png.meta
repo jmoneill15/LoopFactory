@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 37708a58afd05364fa666a98afcff6a2
+guid: a49321ecc33f8df4383f3ecad0de4040
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2785366349977813741
-    second: wheel_0
+      213: 4093480436322176185
+    second: Shadow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheel_0
+      name: Shadow_0
       rect:
         serializedVersion: 2
-        x: 103
-        y: 102
-        width: 837
-        height: 819
+        x: 0
+        y: 0
+        width: 17
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31dfe3cef046859d0800000000000000
-      internalID: -2785366349977813741
+      spriteID: 9bc8ef5c4c6fec830800000000000000
+      internalID: 4093480436322176185
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      wheel_0: -2785366349977813741
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
