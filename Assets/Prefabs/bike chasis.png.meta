@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bike chasis_0: -7092407505519780533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
