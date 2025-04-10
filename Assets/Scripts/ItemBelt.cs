@@ -3,7 +3,7 @@ using UnityEngine;
 public class ConveyorBelt : MonoBehaviour
 {
     [Range(0, 1)]
-    [SerializeField] private float lerpValue =  0f;
+    [SerializeField] private float lerpValue = 0f;
 
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private Transform item;
