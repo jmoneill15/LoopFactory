@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 200420380}
   - component: {fileID: 200420381}
   - component: {fileID: 200420382}
+  - component: {fileID: 200420383}
   m_Layer: 0
   m_Name: Cloud-E
   m_TagString: Untagged
@@ -498,7 +499,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &200420381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,20 +512,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5482254a868d8c444a0f4b643617b148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-BoxCollider2D:
-
   moveSpeed: 3
 --- !u!95 &200420382
 Animator:
   serializedVersion: 7
-
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200420377}
   m_Enabled: 1
-
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5e239fe1dba16d439b68f11de13656b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &200420383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200420377}
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -551,7 +569,7 @@ Animator:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0013574362, y: -0.0020361766}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -561,23 +579,8 @@ Animator:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.20517546, y: 0.24797805}
+  m_Size: {x: 0.19, y: 0.24}
   m_EdgeRadius: 0
-
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a5e239fe1dba16d439b68f11de13656b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
-
 --- !u!1 &203410812
 GameObject:
   m_ObjectHideFlags: 0
@@ -10182,7 +10185,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0000009536743, y: 2.6349907}
+  m_Offset: {x: -0.0000009536743, y: 2.82}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
