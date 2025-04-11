@@ -11,7 +11,7 @@ public class FollowConveyorPath : MonoBehaviour
     private float t = 0f;
 
     public float speed = 2f;
-    public float spacing = 1f;
+    public float spacing =  1f;
 
     public void SetPath(LineRenderer line)
     {
