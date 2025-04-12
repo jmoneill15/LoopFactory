@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 18eac5a9b3f8803489cef82cec7e5476
+guid: 2721e4b18bf7be346be9b64aa6172a46
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8232239204185781835
-    second: materialmaker_0
+      213: -7921649188387484213
+    second: Car_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: materialmaker_0
+      name: Car_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 376
-        height: 379
+        x: 39
+        y: 57
+        width: 930
+        height: 866
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b946706f0631cd80800000000000000
-      internalID: -8232239204185781835
+      spriteID: bcd07eaa806a01290800000000000000
+      internalID: -7921649188387484213
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      materialmaker_0: -8232239204185781835
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

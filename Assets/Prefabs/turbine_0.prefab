@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1796309884170643710}
   - component: {fileID: -681288130893355597}
   - component: {fileID: -1896943879426054971}
+  - component: {fileID: -699324788296413951}
+  - component: {fileID: -1895886517005025859}
   m_Layer: 6
   m_Name: turbine_0
   m_TagString: Plane
@@ -149,3 +151,43 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.56, y: 6.03}
   m_EdgeRadius: 0
+--- !u!114 &-699324788296413951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911105391513539506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2d7e5ce14fd954aa5afab5cd2382c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 5
+--- !u!50 &-1895886517005025859
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911105391513539506}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

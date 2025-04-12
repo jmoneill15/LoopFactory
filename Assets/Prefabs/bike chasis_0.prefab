@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1895649954085780337}
   - component: {fileID: -7504577895352406119}
   - component: {fileID: 5215078848248517430}
+  - component: {fileID: 5167140378267250389}
+  - component: {fileID: -8793972904075891519}
   m_Layer: 6
   m_Name: bike chasis_0
   m_TagString: Bike
@@ -149,3 +151,43 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.3, y: 6.18}
   m_EdgeRadius: 0
+--- !u!114 &5167140378267250389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575840575358064838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2d7e5ce14fd954aa5afab5cd2382c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 6
+--- !u!50 &-8793972904075891519
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575840575358064838}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
