@@ -27,3 +27,4 @@ List any resources with links to sources, author attribution, and brief acknowle
 Assests Used:
 - Sterile Factory Tileset By Meghan https://goldentreesart.itch.io/sterile-factory-tileset-32x32
 - Pixel Plains By SnowHex https://snowhex.itch.io/pixel-plains
+- Font: Free Pixel Font - Thaleah on Unity Asset Store Link: https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059
