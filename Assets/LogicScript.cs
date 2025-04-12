@@ -14,6 +14,7 @@ public class LogicScript : MonoBehaviour
     public string objective;
     //References to drag objects within unity
     public GameObject gameCharacter; 
+    public GameObject roundOverScreen;
     public GameObject WhileLoop3Items;
     public GameObject WhileLoop4Items;
 
@@ -295,6 +296,12 @@ public class LogicScript : MonoBehaviour
         }
     }
     
-
+    //Checdks if the round is done
+    public void CheckIfRoundIsOver(){
+        if(CheckProduction() == true){//if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){
+            //calls exit screen
+            roundOverScreen.SetActive(true);
+        }
+    }
 
 }

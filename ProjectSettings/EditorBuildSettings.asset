@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: ed313ba01e92098449751416141937b9
+  - enabled: 1
+    path: Assets/Scenes/End of Round.unity
+    guid: 13032b2a567d0ea47a984df312b6e82d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
