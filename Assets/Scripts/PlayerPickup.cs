@@ -35,7 +35,8 @@ public class PlayerPickup : MonoBehaviour
             if (rb != null)
             {
                 rb.linearVelocity = Vector2.zero;
-                rb.isKinematic = true;
+                rb.angularVelocity = 0;
+                rb.bodyType = RigidbodyType2D.Kinematic;
             }
 
             carriedItem.transform.SetParent(holdPoint);
@@ -48,7 +49,6 @@ public class PlayerPickup : MonoBehaviour
                 followScript.enabled = false;
             }
 
-            // Remove the highlight when it's picked up
             SpriteRenderer sr = highlightedItem.GetComponent<SpriteRenderer>();
             if (sr != null) sr.color = originalColor;
 
@@ -68,16 +68,18 @@ public class PlayerPickup : MonoBehaviour
         {
             carriedItem.transform.SetParent(null);
 
-            var rb = carriedItem.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = carriedItem.GetComponent<Rigidbody2D>();
             if (rb != null)
-                rb.isKinematic = false;
+            {
+                rb.bodyType = RigidbodyType2D.Dynamic;
+            }
 
             FollowConveyorPath followScript = carriedItem.GetComponent<FollowConveyorPath>();
             if (followScript != null)
             {
                 followScript.enabled = false;
 
-                LineRenderer nearestBelt = FindClosestConveyor(); 
+                LineRenderer nearestBelt = FindClosestConveyor();
                 if (nearestBelt != null)
                     followScript.SetPath(nearestBelt);
 
@@ -106,7 +108,6 @@ public class PlayerPickup : MonoBehaviour
             }
         }
 
-        // Remove glow from old highlighted item
         if (highlightedItem != null && highlightedItem != nearest)
         {
             SpriteRenderer sr = highlightedItem.GetComponent<SpriteRenderer>();
@@ -114,7 +115,6 @@ public class PlayerPickup : MonoBehaviour
             highlightedItem = null;
         }
 
-        // Apply glow to new nearest item
         if (nearest != null && nearest != carriedItem)
         {
             SpriteRenderer sr = nearest.GetComponent<SpriteRenderer>();
@@ -123,9 +123,7 @@ public class PlayerPickup : MonoBehaviour
                 if (highlightedItem != nearest)
                 {
                     originalColor = sr.color;
-
-                    
-                    sr.color = new Color(1f, 0.2f, 0.2f);   
+                    sr.color = new Color(1f, 0.2f, 0.2f); // red highlight
                     highlightedItem = nearest;
                 }
             }
