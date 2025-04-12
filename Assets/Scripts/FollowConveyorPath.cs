@@ -16,7 +16,43 @@ public class FollowConveyorPath : MonoBehaviour
     public void SetPath(LineRenderer line)
     {
         path = line;
-        transform.position = path.GetPosition(0);
+
+        // Find closest segment on the path to where the item is now
+        float closestT = 0f;
+        int closestSegment = 0;
+        float closestDistance = Mathf.Infinity;
+
+        for (int i = 0; i < path.positionCount - 1; i++)
+        {
+            Vector3 a = path.GetPosition(i);
+            Vector3 b = path.GetPosition(i + 1);
+
+            Vector3 projected = ProjectPointOnLineSegment(a, b, transform.position);
+            float distance = Vector3.Distance(transform.position, projected);
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestSegment = i;
+
+                float segmentLength = Vector3.Distance(a, b);
+                closestT = segmentLength > 0f ? Vector3.Distance(a, projected) / segmentLength : 0f;
+            }
+        }
+
+        currentSegment = closestSegment;
+        t = closestT;
+    }
+
+    private Vector3 ProjectPointOnLineSegment(Vector3 a, Vector3 b, Vector3 point)
+    {
+        Vector3 ab = b - a;
+        float abSquared = Vector3.Dot(ab, ab);
+        if (abSquared == 0f) return a;
+
+        float t = Vector3.Dot(point - a, ab) / abSquared;
+        t = Mathf.Clamp01(t);
+        return a + ab * t;
     }
 
     void OnEnable()
