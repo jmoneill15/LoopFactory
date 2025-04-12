@@ -39,4 +39,12 @@ public class ScreenLogic : MonoBehaviour
         SceneManager.LoadScene(0); //Changes it to exit screen
 
     }
+
+    //Load tutorial
+        public void LoadTutorialScreen(){
+        Debug.Log("Title Screen Loaded");
+        //titleAudioManager.PlaySFX(titleAudioManager.button);
+        SceneManager.LoadScene(3); //Changes it to exit screen
+
+    }
 }
