@@ -11505,9 +11505,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-
-  m_Volume: 0.1
-
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11716,12 +11714,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefabs:
   - {fileID: 5155400385582438902, guid: e715f9a918735e34e86bde5b6e045cc3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3575840575358064838, guid: 97301ee81fa9b21488223508008fe3d1, type: 3}
+  - {fileID: 3889834245676006842, guid: 1d71376cfeb5b954e98d8c7bb78287e7, type: 3}
   - {fileID: 28889914885007554, guid: 827ee3d45957c06498c0f048431c52d1, type: 3}
   - {fileID: 6351569882065438043, guid: 0c71543d2a2456b4b9bf7490c3d16135, type: 3}
   - {fileID: 2881496811992974379, guid: cf0184c027de62448a565299313a7d57, type: 3}
-  - {fileID: 0}
+  - {fileID: 2911105391513539506, guid: ce05cb262b896394b99aec0879ffee13, type: 3}
   conveyorPath: {fileID: 903467287}
   spawnDelay: 2
 --- !u!4 &858930977
