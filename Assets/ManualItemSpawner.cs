@@ -24,8 +24,8 @@ public class ManualItemSpawner : MonoBehaviour
             return;
         }
 
-        Vector3 spawnPos = conveyorPath.GetPosition(0);
-        GameObject newItem = Instantiate(prefab, spawnPos, Quaternion.identity);
+        //Vector3 spawnPos = conveyorPath.GetPosition(0);
+        GameObject newItem = Instantiate(prefab,transform.position, Quaternion.identity);
         newItem.tag = "ConveyorItem";
         newItem.layer = LayerMask.NameToLayer("ConveyorItem");
 
