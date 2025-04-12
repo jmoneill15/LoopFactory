@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      A_pixel_art_digital_illustration_of_an_orange_car__transparent_0: 5325626755111450967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
