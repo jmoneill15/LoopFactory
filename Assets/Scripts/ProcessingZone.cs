@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using System.Linq;
+
 
 public class ProcessingZone : MonoBehaviour
 {
@@ -33,65 +35,96 @@ public class ProcessingZone : MonoBehaviour
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+ private void OnTriggerEnter2D(Collider2D other)
+{
+    ConveyorItem item = other.GetComponent<ConveyorItem>();
+    if (item == null)
     {
-        ConveyorItem item = other.GetComponent<ConveyorItem>();
-        if (item != null)
-        {
-            Debug.Log($"✅ Detected item: {item.itemType}");
-            itemsInZone.Add(item);
-            item.gameObject.SetActive(false); // Hide, but keep tracking
-            logic.CheckIfMaterial(item.itemType.ToString());
-            bool wasProduced = logic.CheckProduction();
-            /*if(wasProduced == true){
-                roundOverScreen.SetActive(true);
-            }*/
-            //TryCraft();
-        }
-        else
-        {
-            Debug.Log($"❌ Not a valid item: {other.name}");
-        }
+        Debug.Log($"❌ Not a valid item: {other.name}");
+        return;
     }
 
-   /* void TryCraft()
+    string[] allowedTypes = { "Bike", "Car", "Plane" };
+
+    if (!allowedTypes.Contains(item.itemType.ToString()))
     {
-        Dictionary<ItemType, int> inventory = new Dictionary<ItemType, int>();
+        Debug.Log($"✅ Detected item: {item.itemType}");
+        itemsInZone.Add(item);
+        item.gameObject.SetActive(false); // Hide, but keep tracking
+        logic.CheckIfMaterial(item.itemType.ToString());
+        bool wasProduced = logic.CheckProduction();
+    }
+    else
+    {
+        // Let allowed items pass through
+        Debug.Log($"↪️ Allowed item passed through: {item.itemType}");
+        itemsInZone.Add(item);
+        item.gameObject.SetActive(true); // Optionally, leave it active
+    }
+}
 
-        foreach (var item in itemsInZone)
+
+
+
+    /*
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!inventory.ContainsKey(item.itemType))
-                inventory[item.itemType] = 0;
-
-            inventory[item.itemType]++;
-        }
-
-        foreach (var recipe in recipes)
-        {
-            if (MatchesRecipe(inventory, recipe))
+            ConveyorItem item = other.GetComponent<ConveyorItem>();
+            if (item != null)
             {
-                List<ConveyorItem> matchedItems = ConsumeItems(recipe);
-
-                // Spawn the crafted product
-                GameObject product = Instantiate(recipe.resultPrefab, transform.position, Quaternion.identity);
-
-                // Attach it to conveyor path
-                FollowConveyorPath path = product.GetComponent<FollowConveyorPath>();
-                if (path != null && outputPath != null)
-                {
-                    path.SetPath(outputPath);
+                Debug.Log($"✅ Detected item: {item.itemType}");
+                itemsInZone.Add(item);
+                item.gameObject.SetActive(false); // Hide, but keep tracking
+                logic.CheckIfMaterial(item.itemType.ToString());
+                bool wasProduced = logic.CheckProduction();
+                /*if(wasProduced == true){
+                    roundOverScreen.SetActive(true);
                 }
-                else
-                {
-                    Debug.LogWarning("⚠️ Crafted object missing FollowConveyorPath or outputPath not assigned.");
-                }
-
-                Debug.Log($"✅ Crafted: {recipe.name}");
-                return;
+                //TryCraft();
+            }
+            else
+            {
+                Debug.Log($"❌ Not a valid item: {other.name}");
             }
         }
-    }*/
+    */
+    /* void TryCraft()
+     {
+         Dictionary<ItemType, int> inventory = new Dictionary<ItemType, int>();
+
+         foreach (var item in itemsInZone)
+         {
+             if (!inventory.ContainsKey(item.itemType))
+                 inventory[item.itemType] = 0;
+
+             inventory[item.itemType]++;
+         }
+
+         foreach (var recipe in recipes)
+         {
+             if (MatchesRecipe(inventory, recipe))
+             {
+                 List<ConveyorItem> matchedItems = ConsumeItems(recipe);
+
+                 // Spawn the crafted product
+                 GameObject product = Instantiate(recipe.resultPrefab, transform.position, Quaternion.identity);
+
+                 // Attach it to conveyor path
+                 FollowConveyorPath path = product.GetComponent<FollowConveyorPath>();
+                 if (path != null && outputPath != null)
+                 {
+                     path.SetPath(outputPath);
+                 }
+                 else
+                 {
+                     Debug.LogWarning("⚠️ Crafted object missing FollowConveyorPath or outputPath not assigned.");
+                 }
+
+                 Debug.Log($"✅ Crafted: {recipe.name}");
+                 return;
+             }
+         }
+     }*/
 
     public bool MatchesRecipe(Dictionary<ItemType, int> inventory, Recipe recipe)
     {

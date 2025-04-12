@@ -622,7 +622,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 7.495843, y: 0.5724272}
+  m_Offset: {x: 7.495843, y: 0.04851669}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -632,7 +632,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34, y: 2.14}
+  m_Size: {x: 0.34000015, y: 1.0921797}
   m_EdgeRadius: 0
 --- !u!1 &138275134
 GameObject:
@@ -2578,7 +2578,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 7.495843, y: 1.1658949}
+  m_Offset: {x: 7.495843, y: 1.4031427}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2588,7 +2588,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34000015, y: 0.95306474}
+  m_Size: {x: 0.34000015, y: 0.47856915}
   m_EdgeRadius: 0
 --- !u!483693784 &250453757
 TilemapRenderer:
@@ -10006,50 +10006,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &763740270
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 763740272}
-  - component: {fileID: 763740271}
-  m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!156049354 &763740271
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763740270}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
---- !u!4 &763740272
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763740270}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781986799
 GameObject:
   m_ObjectHideFlags: 0
@@ -14146,6 +14102,53 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1062390744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062390746}
+  - component: {fileID: 1062390745}
+  m_Layer: 17
+  m_Name: ManualItemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1062390745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062390744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3769cc191220a1448bba23db38039453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conveyorPath: {fileID: 1596475401}
+  spacingCheck: 1.5
+  lastSpawnedItem: {fileID: 0}
+--- !u!4 &1062390746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062390744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596475400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088282941
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,7 +14991,7 @@ GameObject:
   - component: {fileID: 1168788090}
   - component: {fileID: 1168788089}
   - component: {fileID: 1168788091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProcessingZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21109,6 +21112,7 @@ Transform:
   - {fileID: 250453755}
   - {fileID: 1270390644}
   - {fileID: 370600962}
+  - {fileID: 1062390746}
   m_Father: {fileID: 1222120108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &1596475401
@@ -21153,14 +21157,13 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1691950635
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Positions:
-  - {x: 4.5514946, y: -3.4945965, z: 0}
-  - {x: 4.567387, y: -1.4351559, z: 1}
-  - {x: 7.790846, y: -1.4351559, z: 1}
-  - {x: 7.7908463, y: 0.3888603, z: 1}
+  - {x: 7.7795, y: 1.250215, z: 1}
+  - {x: 7.7794433, y: 1.9540219, z: 1}
+  - {x: 4.230988, y: 1.9852405, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -21261,8 +21264,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -972738383
-  m_SortingLayer: 2
+  m_SortingLayerID: -1754702585
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -22376,7 +22379,6 @@ GameObject:
   - component: {fileID: 1697834900}
   - component: {fileID: 1697834902}
   - component: {fileID: 1697834901}
-  - component: {fileID: 1697834903}
   m_Layer: 0
   m_Name: Horizontal Top Belts
   m_TagString: Untagged
@@ -22601,52 +22603,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!61 &1697834903
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697834899}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 5.79, y: 1.51}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.56, y: 0.38}
-  m_EdgeRadius: 0
 --- !u!1 &1708680543
 GameObject:
   m_ObjectHideFlags: 0
@@ -27924,6 +27880,10 @@ MonoBehaviour:
   while4ItScreenNeedItem4: {fileID: 1027542266}
   forScreenMade: {fileID: 870429011}
   forScreenNeed: {fileID: 1407108114}
+  spawner: {fileID: 1062390745}
+  bikePrefab: {fileID: 317356476077423438, guid: 9898a578865b01e4e8ac8489cdec763b, type: 3}
+  planePrefab: {fileID: 5595651107693029223, guid: 01a287167080402428b8618037e859a2, type: 3}
+  carPrefab: {fileID: 3562215884624714052, guid: f0507fe517ab44642b5b80304feee09b, type: 3}
   vehicles:
   - Cars
   - Planes
@@ -28666,4 +28626,3 @@ SceneRoots:
   - {fileID: 660119022}
   - {fileID: 1646442666}
   - {fileID: 472834824}
-  - {fileID: 763740272}

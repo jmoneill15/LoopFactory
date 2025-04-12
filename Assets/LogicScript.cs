@@ -48,6 +48,12 @@ public class LogicScript : MonoBehaviour
     //For Loop Screen Totals
     public Text forScreenMade;
     public Text forScreenNeed;
+    public ManualItemSpawner spawner;
+
+    [Header("Vehicle Prefabs")]
+    public GameObject bikePrefab;
+    public GameObject planePrefab;
+    public GameObject carPrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //public AudioSource ; add in audio
@@ -58,6 +64,7 @@ public class LogicScript : MonoBehaviour
     {
         //audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         UpdateObjective();
+        //SpawnProduct();
     }
 
 
@@ -205,6 +212,7 @@ public class LogicScript : MonoBehaviour
             whileScreenMadeItem1.text = (int.Parse(whileScreenMadeItem1.text) - int.Parse(whileScreenNeedItem1.text)).ToString();
             whileScreenMadeItem2.text = (int.Parse(whileScreenMadeItem2.text) - int.Parse(whileScreenNeedItem2.text)).ToString();
             whileScreenMadeItem3.text = (int.Parse(whileScreenMadeItem3.text) - int.Parse(whileScreenNeedItem3.text)).ToString();
+            SpawnProduct();
             return true;
         }
         else
@@ -223,6 +231,7 @@ public class LogicScript : MonoBehaviour
             while4ItScreenMadeItem2.text = (int.Parse(while4ItScreenMadeItem2.text) - int.Parse(while4ItScreenNeedItem2.text)).ToString();
             while4ItScreenMadeItem3.text = (int.Parse(while4ItScreenMadeItem3.text) - int.Parse(while4ItScreenNeedItem3.text)).ToString();
             while4ItScreenMadeItem4.text = (int.Parse(while4ItScreenMadeItem4.text) - int.Parse(while4ItScreenNeedItem4.text)).ToString();
+            SpawnProduct();
             return true;
         }
         else
@@ -241,6 +250,7 @@ public class LogicScript : MonoBehaviour
             while4ItScreenMadeItem2.text = (int.Parse(while4ItScreenMadeItem2.text) - int.Parse(while4ItScreenNeedItem2.text)).ToString();
             while4ItScreenMadeItem3.text = (int.Parse(while4ItScreenMadeItem3.text) - int.Parse(while4ItScreenNeedItem3.text)).ToString();
             while4ItScreenMadeItem4.text = (int.Parse(while4ItScreenMadeItem4.text) - int.Parse(while4ItScreenNeedItem4.text)).ToString();
+            SpawnProduct();
             return true;
         }
         else
@@ -296,6 +306,28 @@ public class LogicScript : MonoBehaviour
         }
     }
     
+    public void SpawnProduct(){
+        GameObject prefabToSpawn = null;
+        string vehicle = vehicleType;
+
+        switch(vehicle){
+            case "Bikes":
+                prefabToSpawn = bikePrefab;
+                break;
+            case "Planes":
+                prefabToSpawn = planePrefab;
+                break;
+            case "Cars":
+                prefabToSpawn = carPrefab;
+                break;
+            default:
+                Debug.LogWarning("Unknown vehicle type: " + vehicleType);
+                return;
+        }
+        spawner.SpawnItem(prefabToSpawn);
+        
+    }
+
     //Checdks if the round is done
     public void CheckIfRoundIsOver(){
         if(CheckProduction() == true){//if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){

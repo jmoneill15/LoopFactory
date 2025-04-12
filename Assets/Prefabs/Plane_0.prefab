@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2003484261370312902}
   - component: {fileID: 5058074998323180804}
   - component: {fileID: 8618909207341253759}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Plane_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d938b680a0f844d8fcb3196b0dec93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  spacing: 1
+  speed: 0.4
+  spacing: 0.8
 --- !u!50 &8618909207341253759
 Rigidbody2D:
   serializedVersion: 5
@@ -179,7 +179,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -190,4 +190,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
