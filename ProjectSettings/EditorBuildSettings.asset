@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exit Screen.unity
     guid: 0e67b0c70cc7b7843bb2981304240d6e
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: ed313ba01e92098449751416141937b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
