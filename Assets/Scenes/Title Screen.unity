@@ -1091,6 +1091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1515203472}
+  - component: {fileID: 1515203473}
   m_Layer: 0
   m_Name: TitleAudioManager
   m_TagString: Audio
@@ -1115,6 +1116,22 @@ Transform:
   - {fileID: 822284598}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1515203473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515203471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e1f8725a6e1c41b86c264244f3591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 410513941}
+  SFXSource: {fileID: 822284599}
+  titleBackground: {fileID: 0}
+  button: {fileID: 0}
 --- !u!1 &1826021836
 GameObject:
   m_ObjectHideFlags: 0
