@@ -18,6 +18,7 @@ TagManager:
   - PlaneWing
   - CarDoor
   - Plane
+  - ProductionLogic
   layers:
   - Default
   - TransparentFX
