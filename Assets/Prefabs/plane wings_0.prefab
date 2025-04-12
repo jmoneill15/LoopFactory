@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -5089421263635030642}
   - component: {fileID: 3447668827269412}
   - component: {fileID: 1753751861692046188}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: plane wings_0
-  m_TagString: Plane
+  m_TagString: PlaneWing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

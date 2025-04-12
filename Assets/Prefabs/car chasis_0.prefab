@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 1550514138608182822}
   - component: {fileID: -1638374522732769303}
   - component: {fileID: -7140903165041921167}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: car chasis_0
-  m_TagString: Car
+  m_TagString: CarChasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

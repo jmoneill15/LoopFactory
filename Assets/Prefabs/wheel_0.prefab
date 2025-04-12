@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3541658978707385514}
   - component: {fileID: -2442148735562656741}
   - component: {fileID: -1989481674107234797}
-  m_Layer: 6
+  m_Layer: 13
   m_Name: wheel_0
-  m_TagString: Any Vehicle
+  m_TagString: Wheel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

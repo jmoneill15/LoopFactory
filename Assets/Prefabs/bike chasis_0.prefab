@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5215078848248517430}
   - component: {fileID: 5167140378267250389}
   - component: {fileID: -8793972904075891519}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bike chasis_0
-  m_TagString: Bike
+  m_TagString: BikeChasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,8 +10,14 @@ TagManager:
   - ConveyorItem
   - Bike
   - Car
+  - BikeChasis
+  - CarChasis
+  - Engine
+  - Turbine
+  - Wheel
+  - PlaneWing
+  - CarDoor
   - Plane
-  - Any Vehicle
   layers:
   - Default
   - TransparentFX
@@ -20,16 +26,16 @@ TagManager:
   - Water
   - UI
   - ConveyorItem
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - BikeChasis
+  - CarChasis
+  - CarDoor
+  - Engine
+  - PlaneWing
+  - Turbine
+  - Wheel
+  - Car
+  - Bike
+  - Plane
   - 
   - 
   - 

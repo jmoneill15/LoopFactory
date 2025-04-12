@@ -53,6 +53,7 @@ public class PlayerPickup : MonoBehaviour
             if (sr != null) sr.color = originalColor;
 
             highlightedItem = null;
+           
 
             Debug.Log("Picked up: " + carriedItem.name);
         }

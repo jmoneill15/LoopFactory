@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3089586525655535289}
   - component: {fileID: -1759909652838962254}
   - component: {fileID: -2734706567240661415}
-  m_Layer: 6
+  m_Layer: 14
   m_Name: Car_0
-  m_TagString: ConveyorItem
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
