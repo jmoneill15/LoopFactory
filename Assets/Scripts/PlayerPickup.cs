@@ -124,7 +124,7 @@ public class PlayerPickup : MonoBehaviour
                 {
                     originalColor = sr.color;
 
-                    // 🔥 Pick your favorite from below!
+                    
                     sr.color = new Color(1f, 0.2f, 0.2f);   
                     highlightedItem = nearest;
                 }
