@@ -70,5 +70,8 @@ TagManager:
   - name: Screens
     uniqueID: 2858123145
     locked: 0
+  - name: ScreenItems
+    uniqueID: 2707667447
+    locked: 0
   m_RenderingLayers:
   - Default
