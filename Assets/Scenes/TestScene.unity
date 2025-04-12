@@ -11713,13 +11713,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabs:
-  - {fileID: 5155400385582438902, guid: e715f9a918735e34e86bde5b6e045cc3, type: 3}
   - {fileID: 3575840575358064838, guid: 97301ee81fa9b21488223508008fe3d1, type: 3}
-  - {fileID: 3889834245676006842, guid: 1d71376cfeb5b954e98d8c7bb78287e7, type: 3}
-  - {fileID: 28889914885007554, guid: 827ee3d45957c06498c0f048431c52d1, type: 3}
-  - {fileID: 6351569882065438043, guid: 0c71543d2a2456b4b9bf7490c3d16135, type: 3}
   - {fileID: 2881496811992974379, guid: cf0184c027de62448a565299313a7d57, type: 3}
+  - {fileID: 6351569882065438043, guid: 0c71543d2a2456b4b9bf7490c3d16135, type: 3}
+  - {fileID: 28889914885007554, guid: 827ee3d45957c06498c0f048431c52d1, type: 3}
+  - {fileID: 3889834245676006842, guid: 1d71376cfeb5b954e98d8c7bb78287e7, type: 3}
   - {fileID: 2911105391513539506, guid: ce05cb262b896394b99aec0879ffee13, type: 3}
+  - {fileID: 5155400385582438902, guid: e715f9a918735e34e86bde5b6e045cc3, type: 3}
   conveyorPath: {fileID: 903467287}
   spawnDelay: 2
 --- !u!4 &858930977
@@ -14306,6 +14306,7 @@ MonoBehaviour:
       count: 1
     resultPrefab: {fileID: 3562215884624714052, guid: f0507fe517ab44642b5b80304feee09b, type: 3}
   outputPath: {fileID: 1168788091}
+  logic: {fileID: 2102752098}
 --- !u!61 &1168788090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26019,7 +26020,7 @@ GameObject:
   - component: {fileID: 2102752098}
   m_Layer: 5
   m_Name: Logic Manager
-  m_TagString: Untagged
+  m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26086,6 +26087,11 @@ MonoBehaviour:
   - Cars
   - Planes
   - Bikes
+  forLoopCounter: 0
+  whileCounterIt1: 0
+  whileCounterIt2: 0
+  whileCounterIt3: 0
+  whileCounterIt4: 0
 --- !u!1 &2106164175
 GameObject:
   m_ObjectHideFlags: 0

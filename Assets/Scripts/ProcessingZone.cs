@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class ProcessingZone : MonoBehaviour
@@ -23,6 +24,13 @@ public class ProcessingZone : MonoBehaviour
 
     public LineRenderer outputPath; // Assign in inspector for output conveyor
 
+    public LogicScript logic;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         ConveyorItem item = other.GetComponent<ConveyorItem>();
@@ -31,7 +39,9 @@ public class ProcessingZone : MonoBehaviour
             Debug.Log($"✅ Detected item: {item.itemType}");
             itemsInZone.Add(item);
             item.gameObject.SetActive(false); // Hide, but keep tracking
-            TryCraft();
+            logic.CheckIfMaterial(item.itemType.ToString());
+            logic.CheckProduction();
+            //TryCraft();
         }
         else
         {
@@ -39,7 +49,7 @@ public class ProcessingZone : MonoBehaviour
         }
     }
 
-    void TryCraft()
+   /* void TryCraft()
     {
         Dictionary<ItemType, int> inventory = new Dictionary<ItemType, int>();
 
@@ -75,9 +85,9 @@ public class ProcessingZone : MonoBehaviour
                 return;
             }
         }
-    }
+    }*/
 
-    bool MatchesRecipe(Dictionary<ItemType, int> inventory, Recipe recipe)
+    public bool MatchesRecipe(Dictionary<ItemType, int> inventory, Recipe recipe)
     {
         foreach (var ingredient in recipe.ingredients)
         {
