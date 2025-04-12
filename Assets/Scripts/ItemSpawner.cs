@@ -41,6 +41,8 @@ public class ItemSpawner : MonoBehaviour
         // Spawn at start of conveyor
         Vector3 spawnPos = conveyorPath.GetPosition(0);
         GameObject newItem = Instantiate(selectedPrefab, spawnPos, Quaternion.identity);
+        newItem.tag = "ConveyorItem"; // <- in case prefab lost its tag
+        newItem.layer = LayerMask.NameToLayer("ConveyorItem"); 
 
         // Assign the path to the item
         FollowConveyorPath follow = newItem.GetComponent<FollowConveyorPath>();
