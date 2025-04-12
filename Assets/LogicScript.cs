@@ -64,6 +64,7 @@ public class LogicScript : MonoBehaviour
     {
         //audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         UpdateObjective();
+        //SpawnProduct();
     }
 
 

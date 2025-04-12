@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4891027091231238829}
   - component: {fileID: 6008212313499687242}
   - component: {fileID: 7583999066459613808}
-  m_Layer: 15
+  m_Layer: 17
   m_Name: Bike_0
   m_TagString: Bike
   m_Icon: {fileID: 0}
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d938b680a0f844d8fcb3196b0dec93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  spacing: 1
+  speed: 0.4
+  spacing: 0.8
 --- !u!50 &6008212313499687242
 Rigidbody2D:
   serializedVersion: 5
@@ -166,7 +166,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
