@@ -8,6 +8,10 @@ TagManager:
   - Bird
   - Audio
   - ConveyorItem
+  - Bike
+  - Car
+  - Plane
+  - Any Vehicle
   layers:
   - Default
   - TransparentFX

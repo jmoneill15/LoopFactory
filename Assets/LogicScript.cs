@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class LogicScript : MonoBehaviour
 {
     public int totalVehicles; //goal for player to make
+    public string vehicleType; 
 
     public string objective;
 
@@ -24,4 +26,6 @@ public class LogicScript : MonoBehaviour
     {
         
     }
+
+    public string[] vehicles;
 }

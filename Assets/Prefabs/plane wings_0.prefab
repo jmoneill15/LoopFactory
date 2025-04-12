@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5089421263635030642}
   m_Layer: 6
   m_Name: plane wings_0
-  m_TagString: ConveyorItem
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
