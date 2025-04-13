@@ -60,6 +60,7 @@ public class ProcessingZone : MonoBehaviour
         Debug.Log($"↪️ Allowed item passed through: {item.itemType}");
         itemsInZone.Add(item);
         item.gameObject.SetActive(true); // Optionally, leave it active
+        logic.CheckIfMaterial(item.itemType.ToString());
     }
 }
 

@@ -29,7 +29,7 @@ public class TrashScript : MonoBehaviour
         ConveyorItem item = other.GetComponent<ConveyorItem>();
         if (item != null)
         {
-            Debug.Log($"✅ Detected item: {item.itemType}");
+            Debug.Log($"✅ Detected item Trashed : {item.itemType}");
             itemsInZone.Add(item);
             item.gameObject.SetActive(false); // Hide, but keep tracking
         }

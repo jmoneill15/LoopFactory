@@ -120,17 +120,16 @@ public class LogicScript : MonoBehaviour
 
         }
         else if(vehicleType == "Planes"){
-            WhileLoop3Items.SetActive(false);
-            WhileLoop4Items.SetActive(true);
-
+            WhileLoop3Items.SetActive(true);
+            WhileLoop4Items.SetActive(false);
+            
             BikesImageSet.SetActive(false);
             PlanesImageSet.SetActive(true);
             CarsImageSet.SetActive(false);
 
-            while4ItScreenNeedItem1.text = "1"; //Engine
-            while4ItScreenNeedItem2.text = "3"; //Plane Wings
-            while4ItScreenNeedItem3.text = "2"; //Turbine
-            while4ItScreenNeedItem4.text = "2"; //Wheels
+            whileScreenNeedItem1.text = "3"; //Plane Wings
+            whileScreenNeedItem2.text = "2";//Turbine
+            whileScreenNeedItem3.text = "2"; // Wheels
         }
     }
     public int forLoopCounter = 0;
@@ -153,13 +152,13 @@ public class LogicScript : MonoBehaviour
         whileCounterIt1 += 1;
         string whileIt1Count = whileCounterIt1.ToString();
 
-        if (vehicleType == "Bikes"){
+        if ((vehicleType == "Bikes")|| (vehicleType == "Planes")){
             whileScreenMadeItem1.text = whileIt1Count;
-             Debug.Log("while loop it 1 counter updated" + whileScreenMadeItem1);
+             Debug.Log("while loop item 1 counter updated " + whileScreenMadeItem1.text);
         }
-        else if ((vehicleType == "Cars") || (vehicleType == "Planes")){
+        else if (vehicleType == "Cars"){
             while4ItScreenMadeItem1.text = whileIt1Count;
-            Debug.Log("while loop it 1 counter updated" + while4ItScreenMadeItem1);
+            Debug.Log("while loop item 1 counter updated " + while4ItScreenMadeItem1.text);
         }
     }
 
@@ -167,13 +166,13 @@ public class LogicScript : MonoBehaviour
         whileCounterIt2 += 1;
         string whileIt2Count = whileCounterIt2.ToString();
 
-        if (vehicleType == "Bikes"){
+        if ((vehicleType == "Bikes") || (vehicleType == "Planes")){
             whileScreenMadeItem2.text = whileIt2Count;
-             Debug.Log("while loop it 1 counter updated" + whileScreenMadeItem2);
+             Debug.Log("while loop item 2 counter updated " + whileScreenMadeItem2.text);
         }
-        else if ((vehicleType == "Cars") || (vehicleType == "Planes")){
+        else if (vehicleType == "Cars"){
             while4ItScreenMadeItem2.text = whileIt2Count;
-            Debug.Log("while loop it 1 counter updated" + while4ItScreenMadeItem2);
+            Debug.Log("while loop item 2 counter updated " + while4ItScreenMadeItem2.text);
         }
 
     }
@@ -181,27 +180,122 @@ public class LogicScript : MonoBehaviour
         whileCounterIt3 += 1;
         string whileIt3Count = whileCounterIt3.ToString();
 
-        if (vehicleType == "Bikes"){
+        if ((vehicleType == "Bikes") || (vehicleType == "Planes")){
             whileScreenMadeItem3.text = whileIt3Count;
-             Debug.Log("while loop it 1 counter updated" + whileScreenMadeItem3);
+             Debug.Log("while loop item 3 counter updated " + whileScreenMadeItem3.text);
         }
-        else if ((vehicleType == "Cars") || (vehicleType == "Planes")){
+        else if (vehicleType == "Cars"){
             while4ItScreenMadeItem3.text = whileIt3Count;
-            Debug.Log("while loop it 1 counter updated" + while4ItScreenMadeItem3);
+            Debug.Log("while loop item 3 counter updated " + while4ItScreenMadeItem3.text);
         }
 
     }
     public void WhileLoopCounterIt4(){
         whileCounterIt4 += 1;
         string whileIt4Count =  whileCounterIt4.ToString();
-        if ((vehicleType == "Cars") || (vehicleType == "Planes")){
+        if (vehicleType == "Cars"){
             while4ItScreenMadeItem4.text = whileIt4Count;
-            Debug.Log("while loop it 1 counter updated" + while4ItScreenMadeItem4);
+            Debug.Log("while loop item 4 counter updated " + while4ItScreenMadeItem4.text);
         }
 
     }
+ public bool CheckProduction()
+{
+    if (vehicleType == "Bikes")
+    {
+        return TryProduce(new[] {
+            (whileCounterIt1, (Action<int>)(val => {
+                whileCounterIt1 = val;
+                whileScreenMadeItem1.text = val.ToString();
+            }), whileScreenNeedItem1),
+
+            (whileCounterIt2, (Action<int>)(val => {
+                whileCounterIt2 = val;
+                whileScreenMadeItem2.text = val.ToString();
+            }), whileScreenNeedItem2),
+
+            (whileCounterIt3, (Action<int>)(val => {
+                whileCounterIt3 = val;
+                whileScreenMadeItem3.text = val.ToString();
+            }), whileScreenNeedItem3)
+        });
+    }
+    else if (vehicleType == "Planes")
+    {
+        return TryProduce(new[] {
+            (whileCounterIt1, (Action<int>)(val => {
+                whileCounterIt1 = val;
+                whileScreenMadeItem1.text = val.ToString();
+            }), whileScreenNeedItem1),
+
+            (whileCounterIt2, (Action<int>)(val => {
+                whileCounterIt2 = val;
+                whileScreenMadeItem2.text = val.ToString();
+            }), whileScreenNeedItem2),
+
+            (whileCounterIt3, (Action<int>)(val => {
+                whileCounterIt3 = val;
+                whileScreenMadeItem3.text = val.ToString();
+            }), whileScreenNeedItem3)
+        });
+    }
+    else if (vehicleType == "Cars")
+    {
+        return TryProduce(new[] {
+            (whileCounterIt1, (Action<int>)(val => {
+                whileCounterIt1 = val;
+                while4ItScreenMadeItem1.text = val.ToString();
+            }), while4ItScreenNeedItem1),
+
+            (whileCounterIt2, (Action<int>)(val => {
+                whileCounterIt2 = val;
+                while4ItScreenMadeItem2.text = val.ToString();
+            }), while4ItScreenNeedItem2),
+
+            (whileCounterIt3, (Action<int>)(val => {
+                whileCounterIt3 = val;
+                while4ItScreenMadeItem3.text = val.ToString();
+            }), while4ItScreenNeedItem3),
+
+            (whileCounterIt4, (Action<int>)(val => {
+                whileCounterIt4 = val;
+                while4ItScreenMadeItem4.text = val.ToString();
+            }), while4ItScreenNeedItem4)
+        });
+    }
+
+    return false;
+}
+
+
+// Helper method to reduce repetition
+private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
+{
+    // Check if all materials are sufficient
+    foreach (var (counter, _, need) in items)
+    {
+        if (counter < int.Parse(need.text))
+            return false;
+    }
+
+    // Subtract materials and update counters + UI
+    for (int i = 0; i < items.Length; i++)
+    {
+        var (counter, updateUI, need) = items[i];
+        int needAmount = int.Parse(need.text);
+        counter -= needAmount;
+        updateUI(counter); // This will update both the value and UI
+        items[i] = (counter, updateUI, need); // update tuple (if needed later)
+    }
+
+    SpawnProduct();
+    return true;
+}
+
+
 
     //checks if a machine was fully made
+    /*
     public bool CheckProduction(){
     if (vehicleType == "Bikes")
     {
@@ -222,15 +316,13 @@ public class LogicScript : MonoBehaviour
     }
     else if (vehicleType == "Planes")
     {
-        if ((int.Parse(while4ItScreenMadeItem1.text) >= int.Parse(while4ItScreenNeedItem1.text)) &&
-            (int.Parse(while4ItScreenMadeItem2.text) >= int.Parse(while4ItScreenNeedItem2.text)) &&
-            (int.Parse(while4ItScreenMadeItem3.text) >= int.Parse(while4ItScreenNeedItem3.text)) &&
-            (int.Parse(while4ItScreenMadeItem4.text) >= int.Parse(while4ItScreenNeedItem4.text)))
+ if ((int.Parse(whileScreenMadeItem1.text) >= int.Parse(whileScreenNeedItem1.text)) &&
+            (int.Parse(whileScreenMadeItem2.text) >= int.Parse(whileScreenNeedItem2.text)) &&
+            (int.Parse(whileScreenMadeItem3.text) >= int.Parse(whileScreenNeedItem3.text)))
         {
-            while4ItScreenMadeItem1.text = (int.Parse(while4ItScreenMadeItem1.text) - int.Parse(while4ItScreenNeedItem1.text)).ToString();
-            while4ItScreenMadeItem2.text = (int.Parse(while4ItScreenMadeItem2.text) - int.Parse(while4ItScreenNeedItem2.text)).ToString();
-            while4ItScreenMadeItem3.text = (int.Parse(while4ItScreenMadeItem3.text) - int.Parse(while4ItScreenNeedItem3.text)).ToString();
-            while4ItScreenMadeItem4.text = (int.Parse(while4ItScreenMadeItem4.text) - int.Parse(while4ItScreenNeedItem4.text)).ToString();
+            whileScreenMadeItem1.text = (int.Parse(whileScreenMadeItem1.text) - int.Parse(whileScreenNeedItem1.text)).ToString();
+            whileScreenMadeItem2.text = (int.Parse(whileScreenMadeItem2.text) - int.Parse(whileScreenNeedItem2.text)).ToString();
+            whileScreenMadeItem3.text = (int.Parse(whileScreenMadeItem3.text) - int.Parse(whileScreenNeedItem3.text)).ToString();
             SpawnProduct();
             return true;
         }
@@ -260,7 +352,7 @@ public class LogicScript : MonoBehaviour
     }
     return false;
 }
-
+*/
 
     public void CheckIfMaterial(string material){
         if (vehicleType == "Bikes"){
@@ -276,18 +368,16 @@ public class LogicScript : MonoBehaviour
 
         }
         else if(vehicleType == "Planes"){
-            if (material == "Engine"){
+            if (material == "PlaneWings"){
                 WhileLoopCounterIt1();
             }
-            else if (material == "PlaneWings"){
+            else if (material == "Turbine"){
                 WhileLoopCounterIt2();
             }
-            else if (material == "Turbine"){
+            else if (material == "Tire"){
                 WhileLoopCounterIt3();
             }
-            else if (material == "Tire"){
-                WhileLoopCounterIt4();
-            }
+            
         }
         else if(vehicleType == "Cars"){
             if (material == "CarChassis"){
@@ -330,7 +420,7 @@ public class LogicScript : MonoBehaviour
 
     //Checdks if the round is done
     public void CheckIfRoundIsOver(){
-        if(CheckProduction() == true){//if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){
+        if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){
             //calls exit screen
             roundOverScreen.SetActive(true);
         }
