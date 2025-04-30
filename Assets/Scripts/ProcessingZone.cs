@@ -46,15 +46,21 @@ public class ProcessingZone : MonoBehaviour
 
     string[] allowedTypes = { "Bike", "Car", "Plane" };
 
-    if (!allowedTypes.Contains(item.itemType.ToString()))
-    {
-        Debug.Log($"✅ Detected item: {item.itemType}");
-        itemsInZone.Add(item);
-        item.gameObject.SetActive(false); // Hide, but keep tracking
-        logic.CheckIfMaterial(item.itemType.ToString());
-        bool wasProduced = logic.CheckProduction();
-    }
-    else
+        if (!allowedTypes.Contains(item.itemType.ToString()))
+        {
+            Debug.Log($"✅ Detected item: {item.itemType}");
+            itemsInZone.Add(item);
+            item.gameObject.SetActive(false); // Hide, but keep tracking
+            logic.CheckIfMaterial(item.itemType.ToString());
+            bool wasProduced = logic.CheckProduction();
+
+            if (!wasProduced)
+            {
+                Debug.Log("❌ Wrong item entered — deducting health.");
+                FindFirstObjectByType<HealthManager>()?.LoseHeart();
+            }
+        }
+        else
     {
         // Let allowed items pass through
         Debug.Log($"↪️ Allowed item passed through: {item.itemType}");
