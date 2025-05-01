@@ -13496,10 +13496,12 @@ MonoBehaviour:
   SFXSource: {fileID: 1405035625}
   background: {fileID: 8300000, guid: bea93a38b71b64b598109b3a3b1a0048, type: 3}
   pickup: {fileID: 8300000, guid: 714c6d1e1d36345f3a5fab47a1d4dbd5, type: 3}
-  drop: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+  drop: {fileID: 8300000, guid: 9c81708937d7b400f94950a59f4ca6bb, type: 3}
+  breakLoop: {fileID: 0}
   endGameLose: {fileID: 0}
   completeTask: {fileID: 0}
   loseHeart: {fileID: 8300000, guid: 07bb7d063a6b94ee695446ccede28c42, type: 3}
+  staticSound: {fileID: 0}
 --- !u!4 &919771383
 Transform:
   m_ObjectHideFlags: 0
