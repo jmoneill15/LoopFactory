@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+        Debug.Log("Moving: " + Input.GetAxisRaw("Horizontal"));
+        Debug.Log("Input: " + Input.GetAxisRaw("Horizontal"));
     }
 
     void FixedUpdate()
