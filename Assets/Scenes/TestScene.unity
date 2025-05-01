@@ -1755,6 +1755,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   holdPoint: {fileID: 824552354}
+  audioManager: {fileID: 919771382}
   conveyorPaths:
   - {fileID: 903467287}
   - {fileID: 1961515234}
@@ -12026,13 +12027,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.112
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 188
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -13493,7 +13494,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 825231923}
   SFXSource: {fileID: 1405035625}
-  background: {fileID: 8300000, guid: 41c131ae9b2f5ee4fbd846123e37c15b, type: 3}
+  background: {fileID: 8300000, guid: bea93a38b71b64b598109b3a3b1a0048, type: 3}
+  pickup: {fileID: 8300000, guid: 714c6d1e1d36345f3a5fab47a1d4dbd5, type: 3}
+  drop: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+  endGameLose: {fileID: 0}
+  completeTask: {fileID: 0}
+  loseHeart: {fileID: 8300000, guid: 07bb7d063a6b94ee695446ccede28c42, type: 3}
 --- !u!4 &919771383
 Transform:
   m_ObjectHideFlags: 0
@@ -18138,7 +18144,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
