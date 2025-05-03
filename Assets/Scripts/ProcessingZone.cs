@@ -35,40 +35,44 @@ public class ProcessingZone : MonoBehaviour
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
- private void OnTriggerEnter2D(Collider2D other)
-{
-    ConveyorItem item = other.GetComponent<ConveyorItem>();
-    if (item == null)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"❌ Not a valid item: {other.name}");
-        return;
-    }
-
-    string[] allowedTypes = { "Bike", "Car", "Plane" };
-
-        if (!allowedTypes.Contains(item.itemType.ToString()))
+        ConveyorItem item = other.GetComponent<ConveyorItem>();
+        if (item == null)
         {
-            Debug.Log($"✅ Detected item: {item.itemType}");
-            itemsInZone.Add(item);
-            item.gameObject.SetActive(false); // Hide, but keep tracking
-            logic.CheckIfMaterial(item.itemType.ToString());
-            bool wasProduced = logic.CheckProduction();
+            Debug.Log($"❌ Not a valid item: {other.name}");
+            return;
+        }
 
-            if (!wasProduced)
-            {
-                Debug.Log("❌ Wrong item entered — deducting health.");
-                FindFirstObjectByType<HealthManager>()?.LoseHeart();
-            }
+        string[] allowedFinalProducts = { "Bike", "Car", "Plane" };
+
+        if (allowedFinalProducts.Contains(item.itemType.ToString()))
+        {
+            Debug.Log($"↪️ Final product passed through: {item.itemType}");
+            return;
+        }
+
+        Debug.Log($"✅ Detected item: {item.itemType}");
+        itemsInZone.Add(item);
+        item.gameObject.SetActive(false); // Hide visually
+
+        // ✅ Check if it’s a valid ingredient for the current recipe
+        bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
+
+        if (!isValid)
+        {
+            Debug.Log("❌ Not part of recipe — losing a heart");
+            FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }
         else
-    {
-        // Let allowed items pass through
-        Debug.Log($"↪️ Allowed item passed through: {item.itemType}");
-        itemsInZone.Add(item);
-        item.gameObject.SetActive(true); // Optionally, leave it active
-        logic.CheckIfMaterial(item.itemType.ToString());
+        {
+            bool wasCrafted = logic.CheckProduction();
+            if (wasCrafted)
+            {
+                Debug.Log("🎉 A vehicle was crafted!");
+            }
+        }
     }
-}
 
 
 
