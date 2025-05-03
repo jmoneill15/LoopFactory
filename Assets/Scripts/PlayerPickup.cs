@@ -6,7 +6,7 @@ public class PlayerPickup : MonoBehaviour
     public float pickupRange = 3f;
     public LayerMask itemLayer;
     public Transform holdPoint;
-
+    public AudioManager audioManager;
     private GameObject carriedItem;
     private GameObject highlightedItem = null;
     private Color originalColor;
@@ -54,6 +54,8 @@ public class PlayerPickup : MonoBehaviour
 
             highlightedItem = null;
            
+        if (audioManager != null)
+            audioManager.PlaySFX(audioManager.pickup);
 
             Debug.Log("Picked up: " + carriedItem.name);
         }
@@ -86,6 +88,9 @@ public class PlayerPickup : MonoBehaviour
 
                 followScript.enabled = true;
             }
+
+            if (audioManager != null)
+                audioManager.PlaySFX(audioManager.drop);
 
             Debug.Log("Dropped: " + carriedItem.name);
             carriedItem = null;
