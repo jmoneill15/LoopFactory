@@ -25,6 +25,7 @@ public class ItemSpawner : MonoBehaviour
     private bool isBlinking = false;
 
     public LogicScript logic;
+    public GameObject timerBackground;
 
 
     void Awake()
