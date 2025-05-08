@@ -16,7 +16,7 @@ public class ItemSpawner : MonoBehaviour
     public float timeBeforePenalty = 20f;
 
     public HealthManager healthManager; // Assign in Inspector
-    public int maxItemsOnBelt = 10; 
+    public int maxItemsOnBelt = 10;
 
     public TextMeshProUGUI conveyorTimerText;
     public GameObject conveyorTimerPanel;

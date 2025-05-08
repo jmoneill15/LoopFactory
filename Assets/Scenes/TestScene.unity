@@ -12541,6 +12541,7 @@ MonoBehaviour:
   conveyorTimerText: {fileID: 1143581253}
   conveyorTimerPanel: {fileID: 0}
   logic: {fileID: 2102752098}
+  timerBackground: {fileID: 0}
 --- !u!4 &858930977
 Transform:
   m_ObjectHideFlags: 0
@@ -13873,7 +13874,7 @@ MonoBehaviour:
   endGameLose: {fileID: 0}
   completeTask: {fileID: 0}
   loseHeart: {fileID: 8300000, guid: 07bb7d063a6b94ee695446ccede28c42, type: 3}
-  staticSound: {fileID: 0}
+  trash: {fileID: 0}
 --- !u!4 &919771383
 Transform:
   m_ObjectHideFlags: 0
@@ -21543,8 +21544,8 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 7.7795, y: 1.250215, z: 1}
-  - {x: 7.7794433, y: 1.9540219, z: 1}
-  - {x: 4.7711697, y: 1.9852405, z: 1}
+  - {x: 7.7794433, y: 1.9741151, z: 1}
+  - {x: 4.242117, y: 2.0110066, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
