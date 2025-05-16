@@ -12,6 +12,8 @@ public class LogicScript : MonoBehaviour
     public string vehicleType; 
 
     public string objective;
+
+    public GameObject timerBackground;
     //References to drag objects within unity
     public GameObject gameCharacter; 
     public GameObject roundOverScreen;
@@ -21,6 +23,8 @@ public class LogicScript : MonoBehaviour
     public GameObject BikesImageSet;
     public GameObject PlanesImageSet;
     public GameObject CarsImageSet;
+    
+    
 
 
     public Text objectiveText; //players objective
@@ -354,48 +358,32 @@ private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
 }
 */
 
-    public void CheckIfMaterial(string material){
-        if (vehicleType == "Bikes"){
-            if (material == "BikeChassis"){
-                WhileLoopCounterIt1();
-            }
-            else if (material == "Engine"){
-                WhileLoopCounterIt2();
-            }
-            else if (material == "Tire"){
-                WhileLoopCounterIt3();
-            }
+    public bool CheckIfMaterial(string material)
+    {
+        if (vehicleType == "Bikes")
+        {
+            if (material == "BikeChassis") { WhileLoopCounterIt1(); return true; }
+            else if (material == "Engine") { WhileLoopCounterIt2(); return true; }
+            else if (material == "Tire") { WhileLoopCounterIt3(); return true; }
+        }
+        else if (vehicleType == "Planes")
+        {
+            if (material == "PlaneWings") { WhileLoopCounterIt1(); return true; }
+            else if (material == "Turbine") { WhileLoopCounterIt2(); return true; }
+            else if (material == "Tire") { WhileLoopCounterIt3(); return true; }
+        }
+        else if (vehicleType == "Cars")
+        {
+            if (material == "CarChassis") { WhileLoopCounterIt1(); return true; }
+            else if (material == "CarDoor") { WhileLoopCounterIt2(); return true; }
+            else if (material == "Engine") { WhileLoopCounterIt3(); return true; }
+            else if (material == "Tire") { WhileLoopCounterIt4(); return true; }
+        }
 
-        }
-        else if(vehicleType == "Planes"){
-            if (material == "PlaneWings"){
-                WhileLoopCounterIt1();
-            }
-            else if (material == "Turbine"){
-                WhileLoopCounterIt2();
-            }
-            else if (material == "Tire"){
-                WhileLoopCounterIt3();
-            }
-            
-        }
-        else if(vehicleType == "Cars"){
-            if (material == "CarChassis"){
-                WhileLoopCounterIt1();
-            }
-            else if (material == "CarDoor"){
-                WhileLoopCounterIt2();
-            }
-            else if (material == "Engine"){
-                WhileLoopCounterIt3();
-            }
-            else if (material == "Tire"){
-                WhileLoopCounterIt4();
-            }
-
-        }
+        // ❌ No matching material found for the current vehicle type
+        return false;
     }
-    
+
     public void SpawnProduct(){
         GameObject prefabToSpawn = null;
         string vehicle = vehicleType;
