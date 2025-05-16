@@ -6,16 +6,17 @@ public class FollowConveyorPath : MonoBehaviour
 {
     public static List<FollowConveyorPath> activeItems = new List<FollowConveyorPath>();
 
-    private LineRenderer path;
+    public LineRenderer path; // 👈 Make it public so other scripts can access it
+
     private int currentSegment = 0;
     private float t = 0f;
 
     public float speed = 2f;
-    public float spacing =  1f;
+    public float spacing = 1f;
 
     public void SetPath(LineRenderer line)
     {
-        path = line;
+        path = line; // 👈 Store path reference for later comparison
 
         // Find closest segment on the path to where the item is now
         float closestT = 0f;
