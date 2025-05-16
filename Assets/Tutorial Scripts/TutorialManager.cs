@@ -53,21 +53,16 @@ public class TutorialManager : MonoBehaviour
             popUpIndex++;
             lastInputTime = Time.time;
         }
-       else if (popUpIndex == 2)
-{
-    if (!Input.GetKey(KeyCode.E))
-    {
-        eWasReleased = true; // Player has released E
-    }
+        else if (popUpIndex == 2)
+        {
+            if (!Input.GetKey(KeyCode.E))
 
-    if (eWasReleased && Input.GetKeyDown(KeyCode.E))
-    {
-        popUpIndex++;
-        lastInputTime = Time.time;
-        eWasReleased = false;
-        Debug.Log(popUpIndex);
-    }
-}
+                popUpIndex++;
+            lastInputTime = Time.time;
+
+            Debug.Log(popUpIndex);
+
+        }
 
         else if (popUpIndex == 3)
         {
@@ -75,21 +70,21 @@ public class TutorialManager : MonoBehaviour
             popUpIndex++;
             lastInputTime = Time.time;
         }
-else if (popUpIndex == 4)
-{
-    if (!Input.GetKey(KeyCode.E))
-    {
-        eWasReleased = true;
-    }
+        else if (popUpIndex == 4)
+        {
+            if (!Input.GetKey(KeyCode.E))
+            {
+                eWasReleased = true;
+            }
 
-    if (eWasReleased && Input.GetKeyDown(KeyCode.E))
-    {
-        popUpIndex++;
-        lastInputTime = Time.time;
-        eWasReleased = false;
-        Debug.Log(popUpIndex);
-    }
-}
+            if (eWasReleased && Input.GetKeyDown(KeyCode.E))
+            {
+                popUpIndex++;
+                lastInputTime = Time.time;
+                eWasReleased = false;
+                Debug.Log(popUpIndex);
+            }
+        }
 
         else if (popUpIndex == 5)
         {
