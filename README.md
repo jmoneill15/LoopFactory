@@ -28,6 +28,8 @@ Hint: Click on the red x button -> title screen for a tutorial
 
 [Link to Presentation](https://docs.google.com/presentation/d/13_ZpsK1MqemisgABrhUsXMVxl9Oe1ZfQofj8KyWqeS4/edit?usp=sharing)
 
+[Link to Deployed Game](https://jmoneill15.github.io/LoopFactory/)
+
 ## Credits and Acknowledgements
 List any resources with links to sources, author attribution, and brief acknowledgment of how the resource was used (including Gen AI for writing, etc.)
 - Game Design Template by Austin Cory Bart, Mark Sheriff, Alec Markarian, and Benjamin Stanley.
