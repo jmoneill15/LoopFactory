@@ -8,7 +8,14 @@ Loop Factory is a fast-paced 2D educational game that teaches players how to use
 - Julia O'Neill (jmoneill@udel.edu)
 
 ## Basic Instructions
-(Coming Soon)
+Welcome to loop factory,
+- To move close-e use keys W,A,S,D
+- To pick up and drop off items use E
+- Complete the overall objective
+- Pick production material off spawner and place on "For Loop" belt
+- Throw out unwanted items in the trash container
+- Once completed move production item on to shipping belt "While Loop" belt
+Hint: Click on the red x button -> title screen for a tutorial 
 
 ## Screenshot
 (Coming Soon)
@@ -18,6 +25,8 @@ Loop Factory is a fast-paced 2D educational game that teaches players how to use
 
 ## Education Game Design Document
 [Link to EGDD](https://github.com/jmoneill15/LoopFactory/blob/main/docs/egdd.md)
+
+[Link to Presentation](https://docs.google.com/presentation/d/13_ZpsK1MqemisgABrhUsXMVxl9Oe1ZfQofj8KyWqeS4/edit?usp=sharing)
 
 ## Credits and Acknowledgements
 List any resources with links to sources, author attribution, and brief acknowledgment of how the resource was used (including Gen AI for writing, etc.)
