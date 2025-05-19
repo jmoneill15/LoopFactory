@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thinkingcloud (2)_0: -2141258780302196602
+      Thinkingcloud (2)_1: -3407309071572349487
+      Thinkingcloud (2)_2: -4454248995524059924
+      Thinkingcloud (2)_3: -7784840791363220559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
