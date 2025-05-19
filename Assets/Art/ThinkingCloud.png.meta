@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ThinkingCloud_0: -8576489296484160763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
