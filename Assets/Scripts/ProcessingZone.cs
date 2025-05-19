@@ -57,21 +57,22 @@ public class ProcessingZone : MonoBehaviour
         item.gameObject.SetActive(false); // Hide visually
 
         // ✅ Check if it’s a valid ingredient for the current recipe
-        bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
+        //bool isValid = recipes.Any(recipe => recipe.ingredients.Any(ingredient => ingredient.itemType == item.itemType));
+       bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
 
         if (!isValid)
         {
             Debug.Log("❌ Not part of recipe — losing a heart");
             HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
-                if (helperBot != null)
-                {
-                    helperBot.ShowThought("Wrong item in processor!");
-                }
+            if (helperBot != null)
+            {
+                helperBot.ShowThought("Wrong item in processor!");
+            }
             //HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
-                if (helperBot != null)
-                {
-                    helperBot.ShowThought("Wrong item in processor!");
-                }
+            if (helperBot != null)
+            {
+                helperBot.ShowThought("Wrong item in processor!");
+            }
             FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }
         else

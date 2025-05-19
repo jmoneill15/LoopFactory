@@ -13,6 +13,7 @@ public class PlayerPickup : MonoBehaviour
     private Color originalColor;
     public LineRenderer[] conveyorPaths;
     public LineRenderer forBelt;
+    public LineRenderer whileBelt;
     private readonly string[] allowedCraftedTags = { "Bike", "Plane", "Car" };
 
     void Update()
@@ -120,6 +121,18 @@ public class PlayerPickup : MonoBehaviour
 
             Debug.Log("Dropped: " + carriedItem.name);
             carriedItem = null;
+            
+            if (nearestBelt == whileBelt && itemData != null && !itemData.isCrafted)
+            {
+                Debug.Log("⛔ Cannot place uncrafted item on the while belt!");
+
+                HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+                if (helperBot != null)
+                    helperBot.ShowThought("Wrong item in processor!");
+
+                return; // keep holding the item
+            }
+            
         }
     }
 
