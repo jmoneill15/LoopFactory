@@ -11,14 +11,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip pickup;
     public AudioClip drop;
-    public AudioClip breakLoop;
-    public AudioClip endGameLose;
-    public AudioClip completeTask;
+    //public AudioClip breakLoop;
+    public AudioClip win;
     public AudioClip loseHeart;
     public AudioClip trash;
+    public AudioClip itemSuccessfullyCrafted;
 
     //Once game starts music is playing constantly
-    private void Start() 
+    private void Start()
     {
         musicSource.clip = background;
         musicSource.volume = 0.1f;  // Turn music down
