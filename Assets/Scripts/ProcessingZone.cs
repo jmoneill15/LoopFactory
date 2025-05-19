@@ -62,6 +62,16 @@ public class ProcessingZone : MonoBehaviour
         if (!isValid)
         {
             Debug.Log("❌ Not part of recipe — losing a heart");
+            HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+                if (helperBot != null)
+                {
+                    helperBot.ShowThought("Wrong item in processor!");
+                }
+            //HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+                if (helperBot != null)
+                {
+                    helperBot.ShowThought("Wrong item in processor!");
+                }
             FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }
         else
@@ -72,6 +82,7 @@ public class ProcessingZone : MonoBehaviour
                 Debug.Log("🎉 A vehicle was crafted!");
             }
         }
+
     }
     
     /*

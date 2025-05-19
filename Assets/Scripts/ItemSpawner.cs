@@ -48,6 +48,7 @@ public class ItemSpawner : MonoBehaviour
 
     void Awake()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         if (conveyorTimerPanel != null)
             conveyorTimerPanel.SetActive(false);
         logic.timerBackground.SetActive(false);
