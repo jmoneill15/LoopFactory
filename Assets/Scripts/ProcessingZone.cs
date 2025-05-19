@@ -82,6 +82,11 @@ public class ProcessingZone : MonoBehaviour
             {
                 Debug.Log("🎉 A vehicle was crafted!");
             }
+            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            if (audioManager != null)
+            {
+                audioManager.PlaySFX(audioManager.win);
+            }
         }
 
     }
