@@ -402,8 +402,16 @@ private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
                 Debug.LogWarning("Unknown vehicle type: " + vehicleType);
                 return;
         }
-        spawner.SpawnItem(prefabToSpawn);
-        
+        GameObject newItem = spawner.SpawnItem(prefabToSpawn);
+        if (newItem != null)
+        {
+            ConveyorItem itemData = newItem.GetComponent<ConveyorItem>();
+            if (itemData != null)
+            {
+                itemData.isCrafted = true; 
+                itemData.itemType = (ItemType)Enum.Parse(typeof(ItemType), vehicleType); // Optional, unless u wanna play with item types
+            }
+        }
     }
 
     //Checdks if the round is done

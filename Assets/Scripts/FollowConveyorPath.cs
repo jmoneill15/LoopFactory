@@ -7,11 +7,13 @@ public class FollowConveyorPath : MonoBehaviour
     public static List<FollowConveyorPath> activeItems = new List<FollowConveyorPath>();
 
     public LineRenderer path; // 👈 Make it public so other scripts can access it
+    public static float globalBeltSpeed = 2f;
+
 
     private int currentSegment = 0;
     private float t = 0f;
 
-    public float speed = 2f;
+    public float speed = 10f;
     public float spacing = 1f;
 
     public void SetPath(LineRenderer line)
@@ -78,7 +80,7 @@ public class FollowConveyorPath : MonoBehaviour
         Vector3 end = path.GetPosition(currentSegment + 1);
         float segmentLength = Vector3.Distance(start, end);
 
-        float step = speed * Time.deltaTime / segmentLength;
+        float step = speed * globalBeltSpeed * Time.deltaTime / segmentLength;
         t += step;
         t = Mathf.Clamp01(t);
 

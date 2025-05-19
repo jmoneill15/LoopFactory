@@ -18,4 +18,5 @@ public enum ItemType
 public class ConveyorItem : MonoBehaviour
 {
     public ItemType itemType;
+    public bool isCrafted = false; // Whether it’s a final product or just a part
 }

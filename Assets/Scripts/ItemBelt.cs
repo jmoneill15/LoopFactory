@@ -7,7 +7,7 @@ public class ConveyorBelt : MonoBehaviour
 
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private Transform item;
-    [SerializeField] private float speed = 0.2f; // How fast the item moves along the belt
+    [SerializeField] private float speed = 1.5f; // How fast the item moves along the belt
 
     void Update()
     {

@@ -10,18 +10,18 @@ public class ManualItemSpawner : MonoBehaviour
     // Optional: to reference the last spawn
     public GameObject lastSpawnedItem;
 
-    public void SpawnItem(GameObject prefab)
+    public GameObject SpawnItem(GameObject prefab)
     {
         if (prefab == null || conveyorPath == null)
         {
             Debug.LogWarning("Missing prefab or conveyorPath");
-            return;
+            return null;
         }
 
         if (!IsSpaceAvailable())
         {
             Debug.Log("Spawn blocked: not enough space");
-            return;
+            return null;
         }
 
         Vector3 spawnPos = conveyorPath.GetPosition(0);
@@ -36,6 +36,7 @@ public class ManualItemSpawner : MonoBehaviour
         }
 
         lastSpawnedItem = newItem;
+        return newItem;
     }
 
     private bool IsSpaceAvailable()

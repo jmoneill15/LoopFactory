@@ -2,10 +2,28 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using System.Linq;
+
+[System.Serializable]
+public class WeightedItem
+{
+    public GameObject prefab;
+    public float weight;
+}
+
 public class ItemSpawner : MonoBehaviour
 {
     [Header("Spawner Settings")]
-    public GameObject[] itemPrefabs; // Array of different item prefabs
+    public WeightedItem[] weightedItems;
+
+    [Header("Guaranteed Spawns")]
+    public GameObject guaranteedEngine;
+    public float engineInterval = 10f;
+    private float engineTimer;
+
+    public GameObject guaranteedTurbine;
+    public float turbineInterval = 10f;
+    private float turbineTimer;
+
     public LineRenderer conveyorPath;
 
     public float spawnDelay = 4f;
@@ -40,6 +58,9 @@ public class ItemSpawner : MonoBehaviour
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         timer = spawnDelay;
 
+        engineTimer = engineInterval;
+        turbineTimer = turbineInterval;
+
         if (conveyorTimerText != null)
             conveyorTimerText.text = "";
 
@@ -65,9 +86,26 @@ public class ItemSpawner : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        engineTimer -= Time.deltaTime;
+        turbineTimer -= Time.deltaTime;
 
         int currentItemCount = FollowConveyorPath.activeItems.Where(i => i != null && i.path == this.conveyorPath).Count();
         bool isActuallyFull = currentItemCount >= maxItemsOnBelt;
+
+        if (!isActuallyFull)
+        {
+            if (engineTimer <= 0f)
+            {
+                SpawnSpecificItem(guaranteedEngine);
+                engineTimer = engineInterval;
+            }
+
+            if (turbineTimer <= 0f)
+            {
+                SpawnSpecificItem(guaranteedTurbine);
+                turbineTimer = turbineInterval;
+            }
+        }
 
         if (!isActuallyFull)
         {
@@ -145,6 +183,19 @@ public class ItemSpawner : MonoBehaviour
                 timer = 0.2f;
         }
     }
+    void SpawnSpecificItem(GameObject prefab)
+    {
+        Vector3 spawnPos = conveyorPath.GetPosition(0);
+        GameObject newItem = Instantiate(prefab, spawnPos, Quaternion.identity);
+        newItem.tag = "ConveyorItem";
+        newItem.layer = LayerMask.NameToLayer("ConveyorItem");
+
+        FollowConveyorPath follow = newItem.GetComponent<FollowConveyorPath>();
+        if (follow != null)
+        {
+            follow.SetPath(conveyorPath);
+        }
+    }
 
     void ClearAllItems()
     {
@@ -154,20 +205,31 @@ public class ItemSpawner : MonoBehaviour
             Destroy(item);
         }
     }
+    GameObject GetWeightedRandomItem()
+    {
+        float totalWeight = weightedItems.Sum(item => item.weight);
+        float rand = Random.Range(0, totalWeight);
+
+        float runningTotal = 0f;
+        foreach (var item in weightedItems)
+        {
+            runningTotal += item.weight;
+            if (rand <= runningTotal)
+                return item.prefab;
+        }
+
+        return weightedItems[0].prefab; // fallback
+    }
 
     void SpawnRandomItem()
     {
-        // Pick a random prefab
-        int index = Random.Range(0, itemPrefabs.Length);
-        GameObject selectedPrefab = itemPrefabs[index];
+        GameObject selectedPrefab = GetWeightedRandomItem();
 
-        // Spawn at start of conveyor
         Vector3 spawnPos = conveyorPath.GetPosition(0);
         GameObject newItem = Instantiate(selectedPrefab, spawnPos, Quaternion.identity);
-        newItem.tag = "ConveyorItem"; // <- in case prefab lost its tag
+        newItem.tag = "ConveyorItem";
         newItem.layer = LayerMask.NameToLayer("ConveyorItem");
 
-        // Assign the path to the item
         FollowConveyorPath follow = newItem.GetComponent<FollowConveyorPath>();
         if (follow != null)
         {

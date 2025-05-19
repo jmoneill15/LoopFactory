@@ -19,6 +19,7 @@ TagManager:
   - CarDoor
   - Plane
   - ProductionLogic
+  - ForBelt
   layers:
   - Default
   - TransparentFX

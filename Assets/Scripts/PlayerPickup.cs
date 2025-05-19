@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class PlayerPickup : MonoBehaviour
 {
@@ -11,9 +12,13 @@ public class PlayerPickup : MonoBehaviour
     private GameObject highlightedItem = null;
     private Color originalColor;
     public LineRenderer[] conveyorPaths;
+    public LineRenderer forBelt;
+    private readonly string[] allowedCraftedTags = { "Bike", "Plane", "Car" };
 
     void Update()
     {
+        HighlightNearestItem();
+
         if (Input.GetKeyDown(pickupKey))
         {
             if (carriedItem == null)
@@ -22,7 +27,6 @@ public class PlayerPickup : MonoBehaviour
                 DropItem();
         }
 
-        HighlightNearestItem();
     }
 
     void TryPickup()
@@ -65,24 +69,46 @@ public class PlayerPickup : MonoBehaviour
         }
     }
 
+    public void ForceDropHeldItem(GameObject item)
+    {
+        if (carriedItem == item)
+            carriedItem = null;
+    }
+
     void DropItem()
     {
         if (carriedItem)
         {
+            FollowConveyorPath followScript = carriedItem.GetComponent<FollowConveyorPath>();
+            ConveyorItem itemData = carriedItem.GetComponent<ConveyorItem>();
+            LineRenderer nearestBelt = FindClosestConveyor();
+
+            // 🧪 Debug info
+            Debug.Log($"🧪 Dropping item: {carriedItem.name}, isCrafted: {itemData?.isCrafted}");
+
+            // 🚫 Block uncrafted items from the for belt
+            if (nearestBelt == forBelt && itemData != null && !itemData.isCrafted)
+            {
+                Debug.Log("⛔ Cannot place uncrafted item on the for belt!");
+
+                HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+                if (helperBot != null)
+                    helperBot.ShowThought("You need to craft that first!");
+
+                return; // keep holding the item
+            }
+
+            // ✅ Passed checks — drop the item
             carriedItem.transform.SetParent(null);
 
             Rigidbody2D rb = carriedItem.GetComponent<Rigidbody2D>();
             if (rb != null)
-            {
                 rb.bodyType = RigidbodyType2D.Dynamic;
-            }
 
-            FollowConveyorPath followScript = carriedItem.GetComponent<FollowConveyorPath>();
             if (followScript != null)
             {
                 followScript.enabled = false;
 
-                LineRenderer nearestBelt = FindClosestConveyor();
                 if (nearestBelt != null)
                     followScript.SetPath(nearestBelt);
 
@@ -96,6 +122,7 @@ public class PlayerPickup : MonoBehaviour
             carriedItem = null;
         }
     }
+
 
     void HighlightNearestItem()
     {

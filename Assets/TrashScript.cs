@@ -20,11 +20,13 @@ public class TrashScript : MonoBehaviour
         public GameObject resultPrefab;
     }
 
+
+
     public List<Recipe> recipes = new List<Recipe>(); // Set up in Inspector
     private List<ConveyorItem> itemsInZone = new List<ConveyorItem>();
 
     public LineRenderer outputPath; // Assign in inspector for output conveyor
-        private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         ConveyorItem item = other.GetComponent<ConveyorItem>();
         if (item != null)
@@ -32,6 +34,19 @@ public class TrashScript : MonoBehaviour
             Debug.Log($"✅ Detected item Trashed : {item.itemType}");
             itemsInZone.Add(item);
             item.gameObject.SetActive(false); // Hide, but keep tracking
+
+            PlayerPickup pickup = FindFirstObjectByType<PlayerPickup>();
+            if (pickup != null)
+            {
+                pickup.ForceDropHeldItem(item.gameObject);
+            }
+
+            // ✅ Reward stamina
+            PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
+            if (player != null)
+            {
+                player.BoostStamina(2f); // Boost amount can be adjusted
+            }
         }
         else
         {
@@ -47,6 +62,8 @@ public class TrashScript : MonoBehaviour
         }
         return true;
     }
+
+    
 
     List<ConveyorItem> ConsumeItems(Recipe recipe)
     {
