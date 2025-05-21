@@ -9,6 +9,8 @@ public class FollowConveyorPath : MonoBehaviour
     public LineRenderer path; // 👈 Make it public so other scripts can access it
     public static float globalBeltSpeed = 2f;
 
+    
+
 
     private int currentSegment = 0;
     private float t = 0f;
@@ -66,10 +68,13 @@ public class FollowConveyorPath : MonoBehaviour
     void OnDisable()
     {
         activeItems.Remove(this);
+
+        
     }
 
     void Update()
     {
+
         if (path == null || currentSegment >= path.positionCount - 1)
             return;
 
