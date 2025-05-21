@@ -41,12 +41,6 @@ public class TrashScript : MonoBehaviour
                 pickup.ForceDropHeldItem(item.gameObject);
             }
 
-            // ✅ Reward stamina
-            PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
-            if (player != null)
-            {
-                player.BoostStamina(2f); // Boost amount can be adjusted
-            }
         }
         else
         {
