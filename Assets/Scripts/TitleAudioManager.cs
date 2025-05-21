@@ -15,6 +15,8 @@ public class TitleAudioManager : MonoBehaviour
     private void Start() 
     {
         musicSource.clip = titleBackground;
+        musicSource.volume = 0.1f;  // Turn music down
+        SFXSource.volume = 1.0f; 
         musicSource.Play();
     }
 
