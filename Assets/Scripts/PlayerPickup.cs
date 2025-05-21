@@ -57,9 +57,9 @@ public class PlayerPickup : MonoBehaviour
             if (sr != null) sr.color = originalColor;
 
             highlightedItem = null;
-           
-        if (audioManager != null)
-            audioManager.PlaySFX(audioManager.pickup);
+
+            if (audioManager != null)
+                audioManager.PlaySFX(audioManager.pickup);
 
             Debug.Log("Picked up: " + carriedItem.name);
         }
