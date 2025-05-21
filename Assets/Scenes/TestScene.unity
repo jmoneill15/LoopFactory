@@ -900,7 +900,6 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7b9c7b8c139aa5e499b7032df9df5ad2, type: 2}
-  m_Controller: {fileID: 9100000, guid: 7b9c7b8c139aa5e499b7032df9df5ad2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -27469,6 +27468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   processor: {fileID: 1168788089}
   holdTime: 2
+  logic: {fileID: 0}
 --- !u!61 &1750396916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32510,6 +32510,9 @@ MonoBehaviour:
   objective: 
   timerBackground: {fileID: 1089499815}
   gameCharacter: {fileID: 0}
+  whileLoopBroken: {fileID: 232952978}
+  whileSign: {fileID: 619747930}
+  whileSignText: {fileID: 131515120}
   roundOverScreen: {fileID: 1389492452}
   roundLostScreen: {fileID: 967118363}
   WhileLoop3Items: {fileID: 722228965}
@@ -33469,6 +33472,5 @@ SceneRoots:
   - {fileID: 1646442666}
   - {fileID: 472834824}
   - {fileID: 77496237}
-
   - {fileID: 1750396917}
-
+  - {fileID: 232952980}
