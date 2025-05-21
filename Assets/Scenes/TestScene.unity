@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 77496235}
   - component: {fileID: 77496234}
   - component: {fileID: 77496238}
-  - component: {fileID: 77496239}
+  - component: {fileID: 77496240}
   m_Layer: 0
   m_Name: Helper Robot
   m_TagString: Untagged
@@ -611,8 +611,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.21}
-    newSize: {x: 7.16, y: 9.05}
+    oldSize: {x: 0.14, y: 0.19}
+    newSize: {x: 0.14, y: 0.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -690,12 +690,12 @@ SpriteRenderer:
   m_SortingLayerID: -1587299849
   m_SortingLayer: 8
   m_SortingOrder: 2
-  m_Sprite: {fileID: 3400675252156997113, guid: dd08a7376e370f845a3ad173fc7d98d9, type: 3}
+  m_Sprite: {fileID: -1302269613, guid: ec21b945e8af7f24cb3a3adc2ecc550b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.16, y: 9.05}
+  m_Size: {x: 0.14, y: 0.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thinkingCloudPanel: {fileID: 469093725}
   cloudText: {fileID: 987211316}
---- !u!95 &77496239
+--- !u!95 &77496240
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -15404,10 +15404,8 @@ MonoBehaviour:
   drop: {fileID: 8300000, guid: 9c81708937d7b400f94950a59f4ca6bb, type: 3}
   win: {fileID: 0}
   loseHeart: {fileID: 8300000, guid: 07bb7d063a6b94ee695446ccede28c42, type: 3}
-
   trash: {fileID: 0}
   itemSuccessfullyCrafted: {fileID: 0}
-
 --- !u!4 &919771383
 Transform:
   m_ObjectHideFlags: 0
