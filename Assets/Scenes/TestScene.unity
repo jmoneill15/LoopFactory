@@ -820,7 +820,7 @@ Animator:
   m_GameObject: {fileID: 77496233}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e7e5d6c36b75bd4b9a14cb833a8e7cb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7b9c7b8c139aa5e499b7032df9df5ad2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15714,10 +15714,8 @@ MonoBehaviour:
   drop: {fileID: 8300000, guid: 9c81708937d7b400f94950a59f4ca6bb, type: 3}
   win: {fileID: 0}
   loseHeart: {fileID: 8300000, guid: 07bb7d063a6b94ee695446ccede28c42, type: 3}
-
   trash: {fileID: 8300000, guid: f602e9d77eef82649a0c6b025b85a8c0, type: 3}
   itemSuccessfullyCrafted: {fileID: 8300000, guid: 3d217a22ebaa69c4f8beaa6b5ac5382c, type: 3}
-
 --- !u!4 &919771383
 Transform:
   m_ObjectHideFlags: 0
