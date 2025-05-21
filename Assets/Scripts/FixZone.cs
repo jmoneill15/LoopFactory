@@ -1,4 +1,4 @@
-using UnityEditor.ShaderGraph.Internal;
+
 using UnityEngine;
 
 public class FixZone : MonoBehaviour
