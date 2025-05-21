@@ -62,10 +62,11 @@ public class ProcessingZone : MonoBehaviour
         Debug.Log($"✅ Detected item: {item.itemType}");
         itemsInZone.Add(item);
         item.gameObject.SetActive(false); // Hide visually
+        audioManager.PlaySFX(audioManager.correctPart);
 
         // ✅ Check if it’s a valid ingredient for the current recipe
         //bool isValid = recipes.Any(recipe => recipe.ingredients.Any(ingredient => ingredient.itemType == item.itemType));
-       bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
+        bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
 
         if (!isValid)
         {

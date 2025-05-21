@@ -17,6 +17,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip trash;
     public AudioClip itemSuccessfullyCrafted;
 
+    public AudioClip correctPart;
+
     //Once game starts music is playing constantly
     private void Start()
     {
