@@ -9,12 +9,14 @@ using NUnit.Framework;
 public class LogicScriptTut : MonoBehaviour
 {
     public int totalVehicles; //goal for player to make
-    public string vehicleType; 
+    public string vehicleType;
 
     public string objective;
     //References to drag objects within unity
-    public GameObject gameCharacter; 
+    public GameObject gameCharacter;
     public GameObject roundOverScreen;
+
+    public GameObject roundLostScreen;
 
     public GameObject tutorialIntroScreen;
     public GameObject WhileLoop3Items;
@@ -58,16 +60,17 @@ public class LogicScriptTut : MonoBehaviour
     public string[] vehicles;
 
     //Making the objectives
-    public void UpdateObjective(){
+    public void UpdateObjective()
+    {
 
-        totalVehicles = 1; 
+        totalVehicles = 1;
         //Debug.Log(totalVehicles);
 
         //Debug.Log(vehicleIndex); 
         vehicleType = "Bike";
         //Debug.Log(vehicleType);
 
-        string strTotVehicle= totalVehicles.ToString();
+        string strTotVehicle = totalVehicles.ToString();
         objective = strTotVehicle + " " + vehicleType;
         //Debug.Log(objective);
 
@@ -76,7 +79,8 @@ public class LogicScriptTut : MonoBehaviour
         //For screen Need vehicles set
         forScreenNeed.text = strTotVehicle;
 
-    if(vehicleType == "Bike"){
+        if (vehicleType == "Bike")
+        {
             whileScreenNeedItem1.text = "1"; // Chasis
             whileScreenNeedItem2.text = "1"; // Engine
             whileScreenNeedItem3.text = "2"; // Wheels
@@ -85,8 +89,9 @@ public class LogicScriptTut : MonoBehaviour
     }
     public int forLoopCounter = 0;
     //Increase For Loop Count
-    public void ForLoopCounter(){
-        
+    public void ForLoopCounter()
+    {
+
         forLoopCounter += 1;
         string forCount = forLoopCounter.ToString();
         forScreenMade.text = forCount;
@@ -98,41 +103,47 @@ public class LogicScriptTut : MonoBehaviour
     public int whileCounterIt1 = 0;
     public int whileCounterIt2 = 0;
     public int whileCounterIt3 = 0;
-    public void WhileLoopCounterIt1(){
+    public void WhileLoopCounterIt1()
+    {
         whileCounterIt1 += 1;
         string whileIt1Count = whileCounterIt1.ToString();
 
-        if (vehicleType == "Bike"){
+        if (vehicleType == "Bike")
+        {
             whileScreenMadeItem1.text = whileIt1Count;
-             Debug.Log("while loop item 1 counter updated " + whileScreenMadeItem1.text);
+            Debug.Log("while loop item 1 counter updated " + whileScreenMadeItem1.text);
         }
     }
 
-    public void WhileLoopCounterIt2(){
+    public void WhileLoopCounterIt2()
+    {
         whileCounterIt2 += 1;
         string whileIt2Count = whileCounterIt2.ToString();
 
-        if (vehicleType == "Bike") {
+        if (vehicleType == "Bike")
+        {
             whileScreenMadeItem2.text = whileIt2Count;
-             Debug.Log("while loop item 2 counter updated " + whileScreenMadeItem2.text);
+            Debug.Log("while loop item 2 counter updated " + whileScreenMadeItem2.text);
         }
 
     }
-    public void WhileLoopCounterIt3(){
+    public void WhileLoopCounterIt3()
+    {
         whileCounterIt3 += 1;
         string whileIt3Count = whileCounterIt3.ToString();
 
-        if (vehicleType == "Bike") {
+        if (vehicleType == "Bike")
+        {
             whileScreenMadeItem3.text = whileIt3Count;
-             Debug.Log("while loop item 3 counter updated " + whileScreenMadeItem3.text);
+            Debug.Log("while loop item 3 counter updated " + whileScreenMadeItem3.text);
         }
 
     }
- public bool CheckProduction()
-{
-    if (vehicleType == "Bike")
+    public bool CheckProduction()
     {
-        return TryProduce(new[] {
+        if (vehicleType == "Bike")
+        {
+            return TryProduce(new[] {
             (whileCounterIt1, (Action<int>)(val => {
                 whileCounterIt1 = val;
                 whileScreenMadeItem1.text = val.ToString();
@@ -148,85 +159,101 @@ public class LogicScriptTut : MonoBehaviour
                 whileScreenMadeItem3.text = val.ToString();
             }), whileScreenNeedItem3)
         });
+        }
+
+        return false;
     }
-    
-    return false;
-}
 
 
-// Helper method to reduce repetition
-private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
-{
-    // Check if all materials are sufficient
-    foreach (var (counter, _, need) in items)
+    // Helper method to reduce repetition
+    private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
     {
-        if (counter < int.Parse(need.text))
-            return false;
+        // Check if all materials are sufficient
+        foreach (var (counter, _, need) in items)
+        {
+            if (counter < int.Parse(need.text))
+                return false;
+        }
+
+        // Subtract materials and update counters + UI
+        for (int i = 0; i < items.Length; i++)
+        {
+            var (counter, updateUI, need) = items[i];
+            int needAmount = int.Parse(need.text);
+            counter -= needAmount;
+            updateUI(counter); // This will update both the value and UI
+            items[i] = (counter, updateUI, need); // update tuple (if needed later)
+        }
+
+        SpawnProduct();
+        return true;
     }
 
-    // Subtract materials and update counters + UI
-    for (int i = 0; i < items.Length; i++)
+
+
+    public void CheckIfMaterial(string material)
     {
-        var (counter, updateUI, need) = items[i];
-        int needAmount = int.Parse(need.text);
-        counter -= needAmount;
-        updateUI(counter); // This will update both the value and UI
-        items[i] = (counter, updateUI, need); // update tuple (if needed later)
-    }
-
-    SpawnProduct();
-    return true;
-}
-
-
-
-    public void CheckIfMaterial(string material){
-        if (vehicleType == "Bike"){
-            if (material == "BikeChassis"){
+        if (vehicleType == "Bike")
+        {
+            if (material == "BikeChassis")
+            {
                 WhileLoopCounterIt1();
             }
-            else if (material == "Engine"){
+            else if (material == "Engine")
+            {
                 WhileLoopCounterIt2();
             }
-            else if (material == "Tire"){
+            else if (material == "Tire")
+            {
                 WhileLoopCounterIt3();
             }
 
         }
     }
-    
-    public void SpawnProduct(){
+
+    public void SpawnProduct()
+    {
         GameObject prefabToSpawn = null;
         string vehicle = vehicleType;
 
-        switch(vehicle){
+        switch (vehicle)
+        {
             case "Bike":
                 prefabToSpawn = bikePrefab;
                 break;
-        
+
             default:
                 Debug.LogWarning("Unknown vehicle type: " + vehicleType);
                 return;
         }
         spawner.SpawnItem(prefabToSpawn);
-        
+
     }
 
     //Checdks if the round is done
-    public void CheckIfRoundIsOver(){
-        if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){
+    public void CheckIfRoundIsOver()
+    {
+        if (int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text))
+        {
             //calls exit screen
             roundOverScreen.SetActive(true);
         }
     }
 
-    public void StartTutorial(){
+    public void StartTutorial()
+    {
         tutorialIntroScreen.SetActive(false);
         //Debug.Log("Closed intro screen");
     }
 
-        public void ResetTutorialIntro(){
+    public void ResetTutorialIntro()
+    {
         tutorialIntroScreen.SetActive(true);
+    }
+
+    public void PlayerDiedScreen()
+    {
+        roundLostScreen.SetActive(true); 
     }
 
 }

@@ -80,6 +80,7 @@ public class ProcessingZone : MonoBehaviour
 
         Debug.Log($"✅ Detected item: {item.itemType}");
         itemsInZone.Add(item);
+
         //item.gameObject.SetActive(false); // Hide visually
 
         

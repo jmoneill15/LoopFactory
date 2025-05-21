@@ -1,4 +1,4 @@
-# LoopFactory
+# Loop Factory
 ## Description of Game
 Loop Factory is a fast-paced 2D educational game that teaches players how to use for and while loops through interactive gameplay. Players take on the role of a junior robot engineer working in an automated factory where they collect, assemble, and ship items using loop logic. By managing conveyor belts and solving loop-based challenges, players gain hands-on experience with core programming concepts. Designed for beginners, classrooms, and anyone looking to refresh their coding skills, Loop Factory makes learning to code fun, visual, and engaging.
 
@@ -9,16 +9,19 @@ Loop Factory is a fast-paced 2D educational game that teaches players how to use
 
 ## Basic Instructions
 Welcome to loop factory,
-- To move close-e use keys W,A,S,D
+- To move Cloud-e use keys W,A,S,D
 - To pick up and drop off items use E
-- Complete the overall objective
-- Pick production material off spawner and place on "For Loop" belt
+- Complete the production quota
+- Need a speed boost? Hold Left-Shift
+- Pick product parts off the spawner belt and place on "While Loop" belt
+- If the "While Loop"
+- Don't let the spawner fill up either 
 - Throw out unwanted items in the trash container
-- Once completed move production item on to shipping belt "While Loop" belt
-Hint: Click on the red x button -> title screen for a tutorial 
+- Once completed move production item on to shipping belt "For Loop" belt
+Hint: Click on the red x button to head to title screen or to restart the game
 
 ## Screenshot
-(Coming Soon)
+[!Gameplay Screenshot](https://drive.google.com/drive/u/0/folders/1dkkqYcCz8ExcnQybUn--dv8YaUixYQNQ)
 
 ## Gameplay Video
 (Coming Soon)

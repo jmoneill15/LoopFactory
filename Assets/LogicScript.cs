@@ -9,22 +9,23 @@ public class LogicScript : MonoBehaviour
 {
     public int totalVehicles; //goal for player to make
     public int vehicleIndex; //array index to choose vehicle
-    public string vehicleType; 
+    public string vehicleType;
 
     public string objective;
 
     public GameObject timerBackground;
     //References to drag objects within unity
-    public GameObject gameCharacter; 
+    public GameObject gameCharacter;
     public GameObject roundOverScreen;
+    public GameObject roundLostScreen;
     public GameObject WhileLoop3Items;
     public GameObject WhileLoop4Items;
 
     public GameObject BikesImageSet;
     public GameObject PlanesImageSet;
     public GameObject CarsImageSet;
-    
-    
+
+
 
 
     public Text objectiveText; //players objective
@@ -75,7 +76,8 @@ public class LogicScript : MonoBehaviour
     public string[] vehicles;
 
     //Making the objectives
-    public void UpdateObjective(){
+    public void UpdateObjective()
+    {
 
         totalVehicles = Random.Range(2, 5); // to get 2-4
         //Debug.Log(totalVehicles);
@@ -85,7 +87,7 @@ public class LogicScript : MonoBehaviour
         vehicleType = vehicles[vehicleIndex];
         //Debug.Log(vehicleType);
 
-        string strTotVehicle= totalVehicles.ToString();
+        string strTotVehicle = totalVehicles.ToString();
         objective = strTotVehicle + " " + vehicleType;
         //Debug.Log(objective);
 
@@ -95,7 +97,8 @@ public class LogicScript : MonoBehaviour
         forScreenNeed.text = strTotVehicle;
 
         //Check what vehicle it is and set needed accordingly
-        if(vehicleType == "Cars"){
+        if (vehicleType == "Cars")
+        {
             WhileLoop3Items.SetActive(false);
             WhileLoop4Items.SetActive(true);
 
@@ -108,12 +111,13 @@ public class LogicScript : MonoBehaviour
             while4ItScreenNeedItem3.text = "1"; //Engine
             while4ItScreenNeedItem4.text = "4"; //Wheels
 
-        
+
         }
-        else if(vehicleType == "Bikes"){
+        else if (vehicleType == "Bikes")
+        {
             WhileLoop3Items.SetActive(true);
             WhileLoop4Items.SetActive(false);
-            
+
             BikesImageSet.SetActive(true);
             PlanesImageSet.SetActive(false);
             CarsImageSet.SetActive(false);
@@ -123,10 +127,11 @@ public class LogicScript : MonoBehaviour
             whileScreenNeedItem3.text = "2"; // Wheels
 
         }
-        else if(vehicleType == "Planes"){
+        else if (vehicleType == "Planes")
+        {
             WhileLoop3Items.SetActive(true);
             WhileLoop4Items.SetActive(false);
-            
+
             BikesImageSet.SetActive(false);
             PlanesImageSet.SetActive(true);
             CarsImageSet.SetActive(false);
@@ -138,8 +143,9 @@ public class LogicScript : MonoBehaviour
     }
     public int forLoopCounter = 0;
     //Increase For Loop Count
-    public void ForLoopCounter(){
-        
+    public void ForLoopCounter()
+    {
+
         forLoopCounter += 1;
         string forCount = forLoopCounter.ToString();
         forScreenMade.text = forCount;
@@ -152,62 +158,73 @@ public class LogicScript : MonoBehaviour
     public int whileCounterIt2 = 0;
     public int whileCounterIt3 = 0;
     public int whileCounterIt4 = 0;
-    public void WhileLoopCounterIt1(){
+    public void WhileLoopCounterIt1()
+    {
         whileCounterIt1 += 1;
         string whileIt1Count = whileCounterIt1.ToString();
 
-        if ((vehicleType == "Bikes")|| (vehicleType == "Planes")){
+        if ((vehicleType == "Bikes") || (vehicleType == "Planes"))
+        {
             whileScreenMadeItem1.text = whileIt1Count;
-             Debug.Log("while loop item 1 counter updated " + whileScreenMadeItem1.text);
+            Debug.Log("while loop item 1 counter updated " + whileScreenMadeItem1.text);
         }
-        else if (vehicleType == "Cars"){
+        else if (vehicleType == "Cars")
+        {
             while4ItScreenMadeItem1.text = whileIt1Count;
             Debug.Log("while loop item 1 counter updated " + while4ItScreenMadeItem1.text);
         }
     }
 
-    public void WhileLoopCounterIt2(){
+    public void WhileLoopCounterIt2()
+    {
         whileCounterIt2 += 1;
         string whileIt2Count = whileCounterIt2.ToString();
 
-        if ((vehicleType == "Bikes") || (vehicleType == "Planes")){
+        if ((vehicleType == "Bikes") || (vehicleType == "Planes"))
+        {
             whileScreenMadeItem2.text = whileIt2Count;
-             Debug.Log("while loop item 2 counter updated " + whileScreenMadeItem2.text);
+            Debug.Log("while loop item 2 counter updated " + whileScreenMadeItem2.text);
         }
-        else if (vehicleType == "Cars"){
+        else if (vehicleType == "Cars")
+        {
             while4ItScreenMadeItem2.text = whileIt2Count;
             Debug.Log("while loop item 2 counter updated " + while4ItScreenMadeItem2.text);
         }
 
     }
-    public void WhileLoopCounterIt3(){
+    public void WhileLoopCounterIt3()
+    {
         whileCounterIt3 += 1;
         string whileIt3Count = whileCounterIt3.ToString();
 
-        if ((vehicleType == "Bikes") || (vehicleType == "Planes")){
+        if ((vehicleType == "Bikes") || (vehicleType == "Planes"))
+        {
             whileScreenMadeItem3.text = whileIt3Count;
-             Debug.Log("while loop item 3 counter updated " + whileScreenMadeItem3.text);
+            Debug.Log("while loop item 3 counter updated " + whileScreenMadeItem3.text);
         }
-        else if (vehicleType == "Cars"){
+        else if (vehicleType == "Cars")
+        {
             while4ItScreenMadeItem3.text = whileIt3Count;
             Debug.Log("while loop item 3 counter updated " + while4ItScreenMadeItem3.text);
         }
 
     }
-    public void WhileLoopCounterIt4(){
+    public void WhileLoopCounterIt4()
+    {
         whileCounterIt4 += 1;
-        string whileIt4Count =  whileCounterIt4.ToString();
-        if (vehicleType == "Cars"){
+        string whileIt4Count = whileCounterIt4.ToString();
+        if (vehicleType == "Cars")
+        {
             while4ItScreenMadeItem4.text = whileIt4Count;
             Debug.Log("while loop item 4 counter updated " + while4ItScreenMadeItem4.text);
         }
 
     }
- public bool CheckProduction()
-{
-    if (vehicleType == "Bikes")
+    public bool CheckProduction()
     {
-        return TryProduce(new[] {
+        if (vehicleType == "Bikes")
+        {
+            return TryProduce(new[] {
             (whileCounterIt1, (Action<int>)(val => {
                 whileCounterIt1 = val;
                 whileScreenMadeItem1.text = val.ToString();
@@ -223,10 +240,10 @@ public class LogicScript : MonoBehaviour
                 whileScreenMadeItem3.text = val.ToString();
             }), whileScreenNeedItem3)
         });
-    }
-    else if (vehicleType == "Planes")
-    {
-        return TryProduce(new[] {
+        }
+        else if (vehicleType == "Planes")
+        {
+            return TryProduce(new[] {
             (whileCounterIt1, (Action<int>)(val => {
                 whileCounterIt1 = val;
                 whileScreenMadeItem1.text = val.ToString();
@@ -242,10 +259,10 @@ public class LogicScript : MonoBehaviour
                 whileScreenMadeItem3.text = val.ToString();
             }), whileScreenNeedItem3)
         });
-    }
-    else if (vehicleType == "Cars")
-    {
-        return TryProduce(new[] {
+        }
+        else if (vehicleType == "Cars")
+        {
+            return TryProduce(new[] {
             (whileCounterIt1, (Action<int>)(val => {
                 whileCounterIt1 = val;
                 while4ItScreenMadeItem1.text = val.ToString();
@@ -266,35 +283,35 @@ public class LogicScript : MonoBehaviour
                 while4ItScreenMadeItem4.text = val.ToString();
             }), while4ItScreenNeedItem4)
         });
+        }
+
+        return false;
     }
 
-    return false;
-}
 
-
-// Helper method to reduce repetition
-private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
-{
-    // Check if all materials are sufficient
-    foreach (var (counter, _, need) in items)
+    // Helper method to reduce repetition
+    private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
     {
-        if (counter < int.Parse(need.text))
-            return false;
-    }
+        // Check if all materials are sufficient
+        foreach (var (counter, _, need) in items)
+        {
+            if (counter < int.Parse(need.text))
+                return false;
+        }
 
-    // Subtract materials and update counters + UI
-    for (int i = 0; i < items.Length; i++)
-    {
-        var (counter, updateUI, need) = items[i];
-        int needAmount = int.Parse(need.text);
-        counter -= needAmount;
-        updateUI(counter); // This will update both the value and UI
-        items[i] = (counter, updateUI, need); // update tuple (if needed later)
-    }
+        // Subtract materials and update counters + UI
+        for (int i = 0; i < items.Length; i++)
+        {
+            var (counter, updateUI, need) = items[i];
+            int needAmount = int.Parse(need.text);
+            counter -= needAmount;
+            updateUI(counter); // This will update both the value and UI
+            items[i] = (counter, updateUI, need); // update tuple (if needed later)
+        }
 
-    SpawnProduct();
-    return true;
-}
+        SpawnProduct();
+        return true;
+    }
 
 
 
@@ -384,11 +401,13 @@ private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
         return false;
     }
 
-    public void SpawnProduct(){
+    public void SpawnProduct()
+    {
         GameObject prefabToSpawn = null;
         string vehicle = vehicleType;
 
-        switch(vehicle){
+        switch (vehicle)
+        {
             case "Bikes":
                 prefabToSpawn = bikePrefab;
                 break;
@@ -408,18 +427,25 @@ private bool TryProduce((int counter, Action<int> updateUI, Text need)[] items)
             ConveyorItem itemData = newItem.GetComponent<ConveyorItem>();
             if (itemData != null)
             {
-                itemData.isCrafted = true; 
+                itemData.isCrafted = true;
                 itemData.itemType = (ItemType)Enum.Parse(typeof(ItemType), vehicleType); // Optional, unless u wanna play with item types
             }
         }
     }
 
     //Checdks if the round is done
-    public void CheckIfRoundIsOver(){
-        if(int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text)){
+    public void CheckIfRoundIsOver()
+    {
+        if (int.Parse(forScreenMade.text) == int.Parse(forScreenNeed.text))
+        {
             //calls exit screen
             roundOverScreen.SetActive(true);
         }
+    }
+    
+        public void PlayerDiedScreen()
+    {
+        roundLostScreen.SetActive(true); 
     }
 
 }

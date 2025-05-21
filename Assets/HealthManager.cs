@@ -15,6 +15,7 @@ public class HealthManager : MonoBehaviour
     public GameObject gameOverScreen; // optional: assign Game Over UI here
 
     AudioManager audioManager;
+    public LogicScript logic;
 
     private void Awake()
     {
@@ -22,14 +23,14 @@ public class HealthManager : MonoBehaviour
     }
     void Start()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         currentHealth = maxHealth;
         UpdateHearts();
     }
 
     public void LoseHeart()
     {
-        if (currentHealth <= 0)
-            return;
+        
 
         currentHealth--;
         audioManager.PlaySFX(audioManager.loseHeart);
@@ -44,8 +45,7 @@ public class HealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("Game Over");
-            if (gameOverScreen != null)
-                gameOverScreen.SetActive(true);
+            logic.PlayerDiedScreen();
 
             Time.timeScale = 0f;
         }
@@ -74,5 +74,6 @@ public class HealthManager : MonoBehaviour
     public bool IsGameOver()
     {
         return currentHealth <= 0;
+        
     }
 }
