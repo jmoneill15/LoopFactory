@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 using System.Linq;
+using System.Threading.Tasks;
 
 
 public class ProcessingZone : MonoBehaviour
@@ -41,7 +42,7 @@ public class ProcessingZone : MonoBehaviour
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private async Task OnTriggerEnter2D(Collider2D other)
     {
         ConveyorItem item = other.GetComponent<ConveyorItem>();
         if (item == null)
@@ -72,12 +73,12 @@ public class ProcessingZone : MonoBehaviour
             HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
             if (helperBot != null)
             {
-                helperBot.ShowThought("Wrong item in processor!");
+                helperBot.ShowThoughtLong("Wrong item in processor!");
             }
             //HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
             if (helperBot != null)
             {
-                helperBot.ShowThought("Wrong item in processor!");
+                helperBot.ShowThoughtLong("Wrong Item! Remember while loops only repeatedly accepts correct items.");
             }
             FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }

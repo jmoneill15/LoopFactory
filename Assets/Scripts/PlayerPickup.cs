@@ -94,7 +94,7 @@ public class PlayerPickup : MonoBehaviour
 
                 HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
                 if (helperBot != null)
-                    helperBot.ShowThought("You need to craft that first!");
+                    helperBot.ShowThoughtLong("You need to craft first! This belt will only accept a set amount of produced vehicles.");
 
                 return; // keep holding the item
             }
@@ -128,7 +128,7 @@ public class PlayerPickup : MonoBehaviour
 
                 HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
                 if (helperBot != null)
-                    helperBot.ShowThought("Wrong item in processor!");
+                    helperBot.ShowThoughtLong("Wrong item in processor!");
 
                 return; // keep holding the item
             }
