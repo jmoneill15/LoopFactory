@@ -8,8 +8,9 @@ public class HelperBotThinking : MonoBehaviour
     public TextMeshProUGUI cloudText;
 
     private Coroutine hideRoutine;
+    
 
-    public void ShowThought(string message, float duration = 6f)
+    public void ShowThoughtLong(string message, float duration = 6f)
     {
         if (hideRoutine != null)
             StopCoroutine(hideRoutine);
@@ -18,6 +19,18 @@ public class HelperBotThinking : MonoBehaviour
         thinkingCloudPanel.SetActive(true);
         hideRoutine = StartCoroutine(HideAfterDelay(duration));
     }
+
+        public void ShowThoughtShort(string message, float duration = 3f)
+    {
+        if (hideRoutine != null)
+            StopCoroutine(hideRoutine);
+
+        cloudText.text = message;
+        thinkingCloudPanel.SetActive(true);
+        hideRoutine = StartCoroutine(HideAfterDelay(duration));
+    }
+
+    
 
     private IEnumerator HideAfterDelay(float time)
     {

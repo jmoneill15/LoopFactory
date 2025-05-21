@@ -21,7 +21,13 @@ public class TrashScript : MonoBehaviour
     }
 
 
+    AudioManager audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+    
     public List<Recipe> recipes = new List<Recipe>(); // Set up in Inspector
     private List<ConveyorItem> itemsInZone = new List<ConveyorItem>();
 
@@ -34,6 +40,7 @@ public class TrashScript : MonoBehaviour
             Debug.Log($"✅ Detected item Trashed : {item.itemType}");
             itemsInZone.Add(item);
             item.gameObject.SetActive(false); // Hide, but keep tracking
+            audioManager.PlaySFX(audioManager.trash);
 
             PlayerPickup pickup = FindFirstObjectByType<PlayerPickup>();
             if (pickup != null)
@@ -41,12 +48,6 @@ public class TrashScript : MonoBehaviour
                 pickup.ForceDropHeldItem(item.gameObject);
             }
 
-            // ✅ Reward stamina
-            PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
-            if (player != null)
-            {
-                player.BoostStamina(2f); // Boost amount can be adjusted
-            }
         }
         else
         {
