@@ -17,6 +17,11 @@ public class LogicScriptTut : MonoBehaviour
     public GameObject roundOverScreen;
 
     public GameObject roundLostScreen;
+    public GameObject whileLoopBroken;
+
+    public GameObject whileSign;
+    public GameObject whileSignText;
+
 
     public GameObject tutorialIntroScreen;
     public GameObject WhileLoop3Items;
@@ -191,25 +196,28 @@ public class LogicScriptTut : MonoBehaviour
 
 
 
-    public void CheckIfMaterial(string material)
+public bool CheckIfMaterial(string material)
+{
+    // Accept only these parts
+    if (material == "Wheel" || material == "Engine" || material == "BikeChassis")
     {
-        if (vehicleType == "Bike")
-        {
-            if (material == "BikeChassis")
-            {
-                WhileLoopCounterIt1();
-            }
-            else if (material == "Engine")
-            {
-                WhileLoopCounterIt2();
-            }
-            else if (material == "Tire")
-            {
-                WhileLoopCounterIt3();
-            }
+        // Call relevant loop counter methods here if needed
+        if (material == "BikeChassis")
+            WhileLoopCounterIt1();
+        else if (material == "Engine")
+            WhileLoopCounterIt2();
+        else if (material == "Wheel")
+            WhileLoopCounterIt3();
 
-        }
+        return true;
     }
+
+    // Reject all others
+    return false;
+}
+
+        
+    
 
     public void SpawnProduct()
     {
@@ -251,9 +259,25 @@ public class LogicScriptTut : MonoBehaviour
         tutorialIntroScreen.SetActive(true);
     }
 
+
     public void PlayerDiedScreen()
     {
-        roundLostScreen.SetActive(true); 
+        roundLostScreen.SetActive(true);
+    }
+
+    public void WhileLoopBroke()
+    {
+        whileLoopBroken.SetActive(true);
+        whileSign.SetActive(false);
+        whileSignText.SetActive(false);
+
+    }
+
+    public void WhileLoopFixed()
+    {
+        whileLoopBroken.SetActive(false);
+        whileSign.SetActive(true);
+        whileSignText.SetActive(true);
     }
 
 }

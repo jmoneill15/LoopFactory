@@ -2,12 +2,17 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 using System.Linq;
+using System.Threading.Tasks;
 
 
 public class ProcessingZoneTut : MonoBehaviour
 {
 
     //public GameObject roundOverScreen;
+
+    public bool isBroken = false;
+    public bool canProcess = true;
+    public Animator processorAnimator;
 
     [System.Serializable]
     public class RecipeIngredient
@@ -24,6 +29,12 @@ public class ProcessingZoneTut : MonoBehaviour
         public GameObject resultPrefab;
     }
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     public List<Recipe> recipes = new List<Recipe>(); // Set up in Inspector
     private List<ConveyorItem> itemsInZone = new List<ConveyorItem>();
 
@@ -33,43 +44,97 @@ public class ProcessingZoneTut : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScriptTut>();
+    logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScriptTut>();
     }
- private void OnTriggerEnter2D(Collider2D other)
-{
-    ConveyorItem item = other.GetComponent<ConveyorItem>();
-    if (item == null)
+    private async Task OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"❌ Not a valid item: {other.name}");
-        return;
-    }
 
-    string[] allowedTypes = { "Bike"};
+        ConveyorItem item = other.GetComponent<ConveyorItem>();
+        if (item == null) return;
 
-        if (!allowedTypes.Contains(item.itemType.ToString()))
-        {
-            Debug.Log($"✅ Detected item: {item.itemType}");
+        // 🔁 Add to list regardless of canProcess
+        if (!itemsInZone.Contains(item))
             itemsInZone.Add(item);
-            item.gameObject.SetActive(false); // Hide, but keep tracking
-            logic.CheckIfMaterial(item.itemType.ToString());
-            bool wasProduced = logic.CheckProduction();
-/*
-            if (!wasProduced)
+
+        if (!canProcess)
+        {
+            Debug.Log("🚫 Processor is currently disabled.");
+            return;
+        }
+        Debug.Log("🎯 Processor received something.");
+
+        
+        if (item == null)
+        {
+            Debug.Log($"❌ Not a valid item: {other.name}");
+            return;
+        }
+
+        string[] allowedFinalProducts = { "Bikes" };
+
+        if (allowedFinalProducts.Contains(item.itemType.ToString()))
+        {
+            Debug.Log($"↪️ Final product passed through: {item.itemType}");
+            return;
+        }
+
+        Debug.Log($"✅ Detected item: {item.itemType}");
+        itemsInZone.Add(item);
+        item.gameObject.SetActive(false); // Hide visually
+        audioManager.PlaySFX(audioManager.correctPart);
+        //item.gameObject.SetActive(false); // Hide visually
+
+        
+
+        // ✅ Check if it’s a valid ingredient for the current recipe
+        //bool isValid = recipes.Any(recipe => recipe.ingredients.Any(ingredient => ingredient.itemType == item.itemType));
+        bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
+
+        if (!isValid)
+        {   HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+            Destroy(item.gameObject);
+            canProcess = false;
+            logic.WhileLoopBroke();
+            BreakProcessor();
+            Debug.Log("❌ Not part of recipe — losing a heart");
+            
+            //HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
+            if (helperBot != null)
             {
-                Debug.Log("❌ Wrong item entered — deducting health.");
-                //FindFirstObjectByType<HealthManager>()?.LoseHeart();
+                helperBot.ShowThoughtLonger("Wrong Item! Remember while loops only repeatedly accepts correct items. Item broke the belt, hold Q for 4 seconds to fix loop. ");
             }
-            */
+            FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }
         else
-    {
-        // Let allowed items pass through
-        Debug.Log($"↪️ Allowed item passed through: {item.itemType}");
-        itemsInZone.Add(item);
-        item.gameObject.SetActive(true); // Optionally, leave it active
-        logic.CheckIfMaterial(item.itemType.ToString());
+        {
+            bool wasCrafted = logic.CheckProduction();
+            if (wasCrafted)
+            {
+                audioManager.PlaySFX(audioManager.itemSuccessfullyCrafted);
+                Debug.Log("🎉 A vehicle was crafted!");
+            }
+
+        }
+
     }
-}
+    
+
+    public void BreakProcessor()
+    {
+        if (!canProcess) return; // Already disabled
+
+        canProcess = false;
+        //processorAnimator?.SetTrigger("Broken");
+        Debug.Log("💥 BreakProcessor() called — Processor is now disabled.");
+    }
+
+    public void FixProcessor()
+    {
+        canProcess = true;
+        //processorAnimator?.SetTrigger("Fixed");
+        Debug.Log("✅ Processor is re-enabled!");
+        
+    }
 
 
     public bool MatchesRecipe(Dictionary<ItemType, int> inventory, Recipe recipe)

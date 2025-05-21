@@ -23,12 +23,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exit Screen.unity
     guid: 0e67b0c70cc7b7843bb2981304240d6e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: ed313ba01e92098449751416141937b9
   - enabled: 1
     path: Assets/Scenes/End of Round.unity
     guid: 13032b2a567d0ea47a984df312b6e82d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/Tutorial Intro (1).unity
+    guid: 1e3cf1123d02bce48ae8788ae9512f4e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/Movement (2).unity
+    guid: 5e485deacfb31864b9dbc57a7d907a75
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/Objective (3).unity
+    guid: d4ce1767aaf8e3c4cac942555258978d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/While Loop (4).unity
+    guid: 3cd464d42bbd4f9418d16eb9850621cc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/Key Details (5).unity
+    guid: cd3a8da343dc63c40a2b3f93ecb88227
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/For Loop (6).unity
+    guid: cdbf9c8a8deecb945a5995286505b17f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Parts/Play game (7).unity
+    guid: dfcc1759e11e06842892907b4a6fa877
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
