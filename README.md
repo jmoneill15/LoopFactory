@@ -22,7 +22,7 @@ Welcome to loop factory,
 Hint: Click on the red x button to head to title screen or to restart the game
 
 ## Screenshot
-[!Gameplay Screenshot](https://drive.google.com/drive/u/0/folders/1dkkqYcCz8ExcnQybUn--dv8YaUixYQNQ)
+[Gameplay Screenshot](https://drive.google.com/drive/u/0/folders/1dkkqYcCz8ExcnQybUn--dv8YaUixYQNQ)
 
 ## Gameplay Video
 [Loop Factory Demo](https://drive.google.com/file/d/1jx06CFWCX4aK-m0zIg-Q5b09-fPlbJ3W/view?usp=drive_link)
