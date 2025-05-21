@@ -91,21 +91,17 @@ public class ProcessingZone : MonoBehaviour
         bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
 
         if (!isValid)
-        {
+        {   HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
             Destroy(item.gameObject);
             canProcess = false;
+            logic.WhileLoopBroke();
             BreakProcessor();
-
             Debug.Log("❌ Not part of recipe — losing a heart");
-            HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
-            if (helperBot != null)
-            {
-                helperBot.ShowThoughtLong("Wrong item in processor!");
-            }
+            
             //HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
             if (helperBot != null)
             {
-                helperBot.ShowThoughtLong("Wrong Item! Remember while loops only repeatedly accepts correct items.");
+                helperBot.ShowThoughtLonger("Wrong Item! Remember while loops only repeatedly accepts correct items. Item broke the belt, hold Q for 4 seconds to fix loop. ");
             }
             FindFirstObjectByType<HealthManager>()?.LoseHeart();
         }

@@ -16,6 +16,11 @@ public class LogicScript : MonoBehaviour
     public GameObject timerBackground;
     //References to drag objects within unity
     public GameObject gameCharacter;
+
+    public GameObject whileLoopBroken;
+
+    public GameObject whileSign;
+    public GameObject whileSignText;
     public GameObject roundOverScreen;
     public GameObject roundLostScreen;
     public GameObject WhileLoop3Items;
@@ -442,10 +447,25 @@ public class LogicScript : MonoBehaviour
             roundOverScreen.SetActive(true);
         }
     }
-    
-        public void PlayerDiedScreen()
+
+    public void PlayerDiedScreen()
     {
-        roundLostScreen.SetActive(true); 
+        roundLostScreen.SetActive(true);
+    }
+
+    public void WhileLoopBroke()
+    {
+        whileLoopBroken.SetActive(true);
+        whileSign.SetActive(false);
+        whileSignText.SetActive(false);
+
+    }
+
+    public void WhileLoopFixed()
+    {
+        whileLoopBroken.SetActive(false);
+        whileSign.SetActive(true);
+        whileSignText.SetActive(true);
     }
 
 }

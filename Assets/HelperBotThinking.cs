@@ -20,7 +20,7 @@ public class HelperBotThinking : MonoBehaviour
         hideRoutine = StartCoroutine(HideAfterDelay(duration));
     }
 
-        public void ShowThoughtShort(string message, float duration = 3f)
+        public void ShowThoughtLonger(string message, float duration = 10f)
     {
         if (hideRoutine != null)
             StopCoroutine(hideRoutine);

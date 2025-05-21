@@ -6,6 +6,11 @@ public class FixZone : MonoBehaviour
     public ProcessingZone processor;
     public float holdTime = 2f;
     private float timer = 0f;
+       public LogicScript logic;
+    void Start()
+    {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -23,6 +28,7 @@ public class FixZone : MonoBehaviour
             {
                 Debug.Log("🛠️ Calling FixProcessor()");
                 processor.FixProcessor(); // this MUST be called
+                logic.WhileLoopFixed();
                 timer = 0f;
             }
         }
