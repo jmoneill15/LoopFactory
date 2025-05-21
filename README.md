@@ -14,7 +14,8 @@ Welcome to loop factory,
 - Complete the production quota
 - Need a speed boost? Hold Left-Shift
 - Pick product parts off the spawner belt and place on "While Loop" belt
-- If the "While Loop"
+- "While loop" belt will break if wrong item is processed
+- hold Q near processing zone to fix "while loop" belt
 - Don't let the spawner fill up either 
 - Throw out unwanted items in the trash container
 - Once completed move production item on to shipping belt "For Loop" belt
