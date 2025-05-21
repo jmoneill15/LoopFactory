@@ -24,6 +24,12 @@ public class ProcessingZone : MonoBehaviour
         public GameObject resultPrefab;
     }
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     public List<Recipe> recipes = new List<Recipe>(); // Set up in Inspector
     private List<ConveyorItem> itemsInZone = new List<ConveyorItem>();
 
@@ -80,13 +86,10 @@ public class ProcessingZone : MonoBehaviour
             bool wasCrafted = logic.CheckProduction();
             if (wasCrafted)
             {
+                audioManager.PlaySFX(audioManager.itemSuccessfullyCrafted);
                 Debug.Log("🎉 A vehicle was crafted!");
             }
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
-            if (audioManager != null)
-            {
-                audioManager.PlaySFX(audioManager.win);
-            }
+
         }
 
     }
