@@ -10,6 +10,10 @@ public class ProcessingZone : MonoBehaviour
 
     //public GameObject roundOverScreen;
 
+    public bool isBroken = false;
+    public bool canProcess = true;
+    public Animator processorAnimator;
+
     [System.Serializable]
     public class RecipeIngredient
     {
@@ -44,7 +48,22 @@ public class ProcessingZone : MonoBehaviour
     }
     private async Task OnTriggerEnter2D(Collider2D other)
     {
+
         ConveyorItem item = other.GetComponent<ConveyorItem>();
+        if (item == null) return;
+
+        // 🔁 Add to list regardless of canProcess
+        if (!itemsInZone.Contains(item))
+            itemsInZone.Add(item);
+
+        if (!canProcess)
+        {
+            Debug.Log("🚫 Processor is currently disabled.");
+            return;
+        }
+        Debug.Log("🎯 Processor received something.");
+
+        
         if (item == null)
         {
             Debug.Log($"❌ Not a valid item: {other.name}");
@@ -61,14 +80,20 @@ public class ProcessingZone : MonoBehaviour
 
         Debug.Log($"✅ Detected item: {item.itemType}");
         itemsInZone.Add(item);
-        item.gameObject.SetActive(false); // Hide visually
+        //item.gameObject.SetActive(false); // Hide visually
+
+        
 
         // ✅ Check if it’s a valid ingredient for the current recipe
         //bool isValid = recipes.Any(recipe => recipe.ingredients.Any(ingredient => ingredient.itemType == item.itemType));
-       bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
+        bool isValid = logic.CheckIfMaterial(item.itemType.ToString());
 
         if (!isValid)
         {
+            Destroy(item.gameObject);
+            canProcess = false;
+            BreakProcessor();
+
             Debug.Log("❌ Not part of recipe — losing a heart");
             HelperBotThinking helperBot = FindFirstObjectByType<HelperBotThinking>();
             if (helperBot != null)
@@ -93,6 +118,24 @@ public class ProcessingZone : MonoBehaviour
 
         }
 
+    }
+    
+
+    public void BreakProcessor()
+    {
+        if (!canProcess) return; // Already disabled
+
+        canProcess = false;
+        //processorAnimator?.SetTrigger("Broken");
+        Debug.Log("💥 BreakProcessor() called — Processor is now disabled.");
+    }
+
+    public void FixProcessor()
+    {
+        canProcess = true;
+        //processorAnimator?.SetTrigger("Fixed");
+        Debug.Log("✅ Processor is re-enabled!");
+        
     }
     
     /*
