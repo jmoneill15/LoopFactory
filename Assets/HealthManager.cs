@@ -14,6 +14,12 @@ public class HealthManager : MonoBehaviour
 
     public GameObject gameOverScreen; // optional: assign Game Over UI here
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         currentHealth = maxHealth;
@@ -26,6 +32,7 @@ public class HealthManager : MonoBehaviour
             return;
 
         currentHealth--;
+        audioManager.PlaySFX(audioManager.loseHeart);
         UpdateHearts();
 
         // 🔁 Trigger damage animation
